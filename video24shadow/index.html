@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadow</title>
+    <style>
+        .box{
+        /*
+            box-shadow: 5px 15px 5px #70a695f7;
+
+ChatGPT
+The box-shadow property in CSS is used to add shadow effects to elements. The property allows you to specify one or more shadows to an element, and each shadow is specified using several values. The syntax for the box-shadow property is:
+
+css
+Copy code
+box-shadow: offset-x offset-y blur-radius spread-radius color;
+For the given box-shadow: 5px 15px 5px #70a695f7;, let's break down each part:
+
+5px: The horizontal offset of the shadow. A positive value moves the shadow to the right, and a negative value moves it to the left.
+15px: The vertical offset of the shadow. A positive value moves the shadow down, and a negative value moves it up.
+5px: The blur radius. The higher the value, the more blurred the shadow will be. A value of 0 means the shadow is sharp.
+#70a695f7: The color of the shadow. This is specified in hexadecimal format, with the last two characters (f7) representing the alpha (transparency) value. */
+            border: 2px solid black;
+            padding: 34px;
+            box-shadow: 5px 15px 5px #70a695f7;
+           box-shadow: horizontal,verticle,blure,color;
+        }
+        .text-element{
+            text-shadow: 2px 2px 4px #70a711;
+        
+            /* The outline property in CSS is used to draw a line around the outside of an element. It is similar to the border property, but it differs in a few ways: */
+/* 
+Outlines do not take up space or affect the layout of the document.
+They may be non-rectangular and are not part of the element's box model.
+Outlines are often used to highlight elements, particularly in accessibility and focus styles. */
+        
+/* outline: [outline-width] [outline-style] [outline-color]; */
+            outline: 2px solid yellow;/*it does not take space it is not the part of box model
+            we can not change the width of outline*/
+             outline-offset: 47px;
+               
+/* The outline-offset property in CSS is used to set the space between an element's outline and its border edge. This property allows you to move the outline away from or closer to the element's border, effectively "offsetting" the outline.  */
+             
+             /*by using this outline go putside the border*/
+
+            border: 2px solid green;/*border does not go outside it is fix*/
+         border-radius:8px ; /*outline follow border*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a box
+    </div>
+    <p class="text-element">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore id cupiditate saepe amet quidem quod quia nobis rem tempore. Dignissimos labore, mollitia quis illum aspernatur consequatur aliquam perferendis reprehenderit vel at necessitatibus tenetur! Ducimus!
+    </p>
+</body>
+</html>

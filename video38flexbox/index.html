@@ -1,0 +1,143 @@
+<!-- if more then one line then aline content center is use
+main axis kee through pfroperty lagati he and cross axis as it is perpendicular
+by default flex direction is left to write we can change it into colum
+row and colum gap difind sepretly 
+jisaka order jyada vo last me jisaka come vo first default order is 0
+flex grow by default 0 flex grow=1 means all item takes equle width
+flex shrink 2 means double speed se shrrink hoga
+aline-self for single item-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- display flex is use to aline content at the center midele or end  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* most of the property apply on the contener */
+        .container {
+            /* The display: flex; property is used in CSS to create a flexible box layout, making it easier to design and align elements within a container. It allows items to be evenly distributed and aligned within the container. */
+            border: 2px solid red;
+            display: flex;
+            /* means now we can use flex box property */
+            /* by default flex box do item left to right */
+
+            height: 80vh;
+
+            /* justify-content: center; */
+            /* item are now horizontal center */
+
+            /* justify-content: flex-end; */
+           /* justify-content: flex-start; */
+           /* justify-content: right; */
+           /* justify-content: space-around; */
+           justify-content: space-between; 
+           /* same for aline-item */
+
+
+            align-items: center;
+            /* item are now vertical center */
+
+
+            /* flex-direction: column; */
+            /* we can chnge flex direction to colume */
+
+            /* flex-direction:column-reverse; */
+            /* it show item in revers order */
+
+            /* flex-wrap: wrap; */
+            /* /if the contain is more in line then it will go to next line */
+
+            /* flex-wrap: wrap-reverse; */
+            /* it wrap oppsite */
+
+            /* if more then one line present then it will not look good so if we have to center this multiple line then we have to use align-content: center; */
+            /* align-content: center; */
+            /* if single line then use aline-item if more line then use align-content: ; */
+
+            align-content: flex-start;
+            /* content go to start */
+
+            /* there is no justify-item center in flexbox */
+
+            /* flex-flow: row wrap; */
+            /* it select two property simulteneusly direction and the wrap */
+
+            gap: 32px;
+            /* it sets gap beetween the items */
+
+            row-gap: 40px;
+            /* gap beetween row is set */
+
+            column-gap: 10px;
+
+            gap: 40px 10px;
+            /* row-gap first then colume-gap */
+
+        }
+
+        
+
+        .item {
+            flex-grow: 1;
+            /* flex-grow: 1; it means all iten presents take equle width by covering the entire width */
+
+            /* by default flex grow is 0 */
+
+            height: 92px;
+            width: 92px;
+            border: 2px solid black;
+            margin: 4px;
+            background-color: blueviolet;
+
+
+            /* which one having more order value is go at the end 
+            and which one having less order value it come at first by default order value is zero jo pehale vo pehale*/
+        }
+
+        .order-1 {
+            order: 1;
+        }
+
+        .order-2 {
+            order: 2;
+        }
+
+        .order-3 {
+            order: 3;
+        }
+        .item1 {
+            flex-grow: 2;
+            /* it takes the space of two item */
+            /* flex-grow: This property defines the ability for a flex item to grow if necessary. A value of 2, as you've specified (flex-grow: 2;), means the item will take twice as much space as other flex items if there is extra space available. However, if there isn't enough space available in the flex container, flex-grow won't have any effect. Make sure the container has enough space to accommodate the growth of the flex item. */
+
+            flex-shrink: 2;
+/* it is abbablity of the item on which flex shrink is apply to shrink itself if aplicale */
+
+
+            /* align-self: flex-end; */
+       /* we can change the position of single item it changethe position of single item*/
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="item item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item order-1">4</div>
+            <div class="item"></div>
+            <div class="item order-2">66</div>
+            <div class="item order-3">99</div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .my {
+            margin: 0px;
+            padding: 0px;
+            border: 2px solid black;
+            height: 3344px;
+            position: absolute;
+            width: 400px;
+            /* display: flow-root; */
+        }
+
+
+        nav {
+            border: 2px solid black;
+            padding: 20px;
+            top: 0px;
+            /* for sticky you must write top or bottom left write  */
+            /*             
+
+           Containing Block: The sticky element must have a defined containing block. If no containing block is defined (for example, if all its ancestors also have position: static;), then the sticky behavior won't work as expected.
+
+Scrollable Context: The sticky element must be scrolled within its containing block. If the containing block does not have overflow (or overflow-x/overflow-y) set to something other than visible, or if it's not tall enough to require scrolling, the sticky behavior won't occur.
+
+Offset: The sticky element needs an offset value to know when to start sticking. This is typically provided by setting top, bottom, left, or right properties. */
+
+
+
+            background-color: pink;
+            width: 358px;
+            position: sticky;
+            z-index: 1;
+
+        }
+
+        .one {
+            width: 380px;
+            height: 290px;
+            margin: 10px;
+            background-color: green;
+            position: relative;
+        }
+
+        .u {
+            margin: 10px;
+            padding: 80px;
+            height: 50px;
+            width: 9px;
+            border: 2px solid pink;
+            display: inline;
+            /* inline tag thats why use it */
+
+            position: relative;
+            top: 100px;
+
+            background-color: brown;
+
+        }
+
+        .j {
+            margin: 10px;
+            padding: 80px;
+            height: 50px;
+            width: 9px;
+            border: 2px solid pink;
+            display: inline;
+            /* inline tag thats why use it */
+
+            position: relative;
+            top: 100px;
+            background-color: bisque;
+        }
+
+        .green {
+            margin: 30px;
+            padding: 20px;
+            /* position: relative; */
+            top: 30px;
+            border: 2px solid black;
+            border-radius: 30px;
+
+        }
+
+        .vg {
+
+            /* right:0px; */
+            /* top: 320px;
+            left: 330px;
+            position: fixed; */
+
+            /* float: right; *
+/* The float: right; property is used to align an element to the right within its containing element. However, when combined with position: fixed;, the behavior may not be as expected.
+When you set position: fixed;, you take the element out of the normal document flow, meaning it is positioned relative to the viewport rather than its containing element. Consequently, the float property doesn't have any effect on fixed-positioned elements. Instead, you should use right: 0; to position the element to the right edge of the viewport. */
+
+
+
+
+            top: 360px;
+            left: 370px;
+            position: fixed;
+            height: 30px;
+            width: 30px;
+            background: conic-gradient(blue, violet, indigo, green, yellow, orange, violet);
+            border-radius: 50%;
+            animation: ghum 2s linear 0s infinite;
+
+
+        }
+
+        .foot {
+            border: 2px solid black;
+            padding: 20px;
+            background-color: pink;
+            width: 358px;
+            position: absolute;
+            bottom: 0px;
+        }
+
+        @keyframes ghum {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="my">
+        <nav>
+
+        </nav>
+        <div class="one">
+            <div class="u">
+
+            </div>
+            <div class="j">
+
+            </div>
+        </div>
+        <div class="green">
+            welcome to sigma web devlopment express
+        </div>
+        <div class="vg">
+            <!-- <svg height="100" width="100"> 
+                <circle cx="50" cy="50" r="20" stroke="black" stroke_width="3" fill="red" />
+            </svg> -->
+            <!-- this is for circle -->
+
+
+        </div>
+        <div class="foot">
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

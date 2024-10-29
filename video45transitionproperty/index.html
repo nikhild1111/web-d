@@ -1,0 +1,50 @@
+<!-- 1)transition means go from one state to other very smoothly
+2)transition property make transition very smothly -->
+<!-- 3)transition property;all,background color,transforam, :-we can apply it on verious property simulteneously -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition </title>
+    <style>
+        .container{
+            background-color: red;
+            width:50vw;
+            height:40vh;
+        }
+        .box{
+            background-color: rgb(187, 22, 22);
+            width: 5vw;
+            height: 4vw;
+           
+            transition-property: background-color,transform;
+            /* 1)on which which funcion the transiton property will apply */
+            transition-duration: 9s;
+            /* 2) in how many time the transtion will do */
+            transition-timing-function: ease-in-out;
+            /* transtion flow */
+            transition-delay: 6s;
+            /* after how many time the transition will work */
+           
+           
+            /* transition: all 3s ease-in 1s; */
+            /* it is use to apply all the property simulteneously */
+
+        }
+        .translate{
+            transform:translateX(10vw) translateY(10vh) scale(2);
+            /* apply according to box width */
+            
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+    
+</body>
+</html>

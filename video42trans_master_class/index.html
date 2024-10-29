@@ -1,0 +1,88 @@
+<!-- mostly use for nav bar
+ transform origine is use if we have to rotate the box about perticular point-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            margin: 55px;
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+        }
+        .box:hover{
+              /* transform: rotate(40deg); */
+        }
+        .box{
+            height: 50px;
+            width:50px;
+            background-color: beige;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* transform: rotate(40deg); */
+            /* 360=1turn */
+            /* transform: rotate(0.125turn); */
+            /* transform: rotateX(40deg); */
+            /* transform: rotatey(98deg); */
+            /* transform: rotatez(40deg); */
+
+
+            /* scale: it is use for increse 2 timese 1,5 times; */
+          /* transform: scale(1.5);
+          /* transform: scalex(1.5); */
+          /* transform: scaley(1.5); */
+          /* transform: scalez(1.5);
+          The scalez() function in CSS is used to scale an element along the Z-axis, which affects the element's size in the third dimension. However, it's important to note that CSS only supports 2D transformations directly with properties like scale() and scaleX(), scaleY(). For 3D transformations, you should use the transform property with a more comprehensive approach.  */
+          /* transform: scale3d(2,3,6); */
+          /* If you want to scale an element along the Z-axis, you can use the scale3d() function or combine it with other 3D transformation functions like rotateX(), rotateY(), rotateZ(), translateX(), translateY(), translateZ(), and scale(). Here’s how you can scale an element along the Z-axis using scale3d():
+
+css
+Copy code
+.element {
+  transform: scale3d(1, 1, 1.5); /* Scale X by 1, Y by 1, and Z by 1.5 */
+/* } */ 
+        
+          /* skew it is only usefull for x and y axis
+          it means steach two apposite axis */
+          /* transform: skew(5deg); */
+          /* transform: skewY(45deg); */
+          /* Yes, the skew() function in CSS takes angles in degrees (deg) as its arguments. You can skew an element along the X-axis, Y-axis, or both. */
+          /* transform: skew(5deg, 10deg); Skews the element by 5 degrees along the X-axis and 10 degrees along the Y-axis */
+
+          /* transform: translateY(100%); */
+          /* /same for z,x and all */
+
+           
+          
+          /* transform:translatey(100%) skew(40deg) translateX(45%); */
+          /* if we have to apply more transform property simulteneously then use */
+          /* we can any number of property simulteneuosly by giving space between them */
+          /* transform:translatey(-100%) skew(40deg) translateX(45%); */
+         /* for hiding nav bar -100 id used */
+
+      
+      
+         /* transform-origin: 10% 10%; */
+         /* transform-origin: 10px 10px; */
+        /* it is used if we have to rotate the containent about perticular point */
+
+        }
+    </style>
+ </head>
+ <body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+ </body>
+ </html>

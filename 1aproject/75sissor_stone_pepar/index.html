@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="name">
+        Rock paper Scissors
+    </div>
+    <!-- <div class="choice">
+        <img id="Rock" src="images\rock.png" alt="no">
+        <img id="paper" src="images\paper.png" alt="no">
+        <img id="scissors" src="images\scissors.png" alt="no">
+    </div> -->
+    <!-- we can not use this becuase we want to use foreach loop and addevent listner to the img so if we use choice.childran then we get htmlcollection and not a node list so we cant use for each loop somwe use queryselectorall  -->
+   <div class="choice">
+      <div class="choices" id="Rock"> <img  src="images\rock.png" alt="no"></div> 
+      <div class="choices" id="paper">     <img  src="images\paper.png" alt="no"></div> 
+      <div class="choices" id="scissors">      <img  src="images\scissors.png" alt="no"></div> 
+    </div>
+    <div class="score_card">
+      <div class="user"> 
+        <p class="user_score">0</p>
+        <span>You </span></div> 
+       <div class="comp">
+        <p class="comp_score">0</p>
+        <span>Comp </span></div>
+        
+    </div>
+  <div class="last">
+
+   <p class="msg">
+        you win
+    </p> </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

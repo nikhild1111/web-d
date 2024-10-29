@@ -1,0 +1,27 @@
+/* //utility class are thec class which we can used in every element */
+/* we are use svg as a file so thsts why use xmls */
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    background-color: #1e1e1e; /* Background color of the scrollbar track */
+       
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e; /* Color of the scrollbar track */
+    border-radius: 10px; /* Rounded corners for track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5c5c5c; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5c5c5c; /* Darker shade on hover */
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #5c5c5c; /* Even darker shade when active */
+}

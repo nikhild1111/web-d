@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!-- In HTML, when you have many <option> elements inside a <select> tag, the spacing between the text and the dropdown icon (usually a down arrow) might increase due to the default styling of the browser. However, this behavior can be controlled and styled using CSS. -->
+
+
+<html lang="en">
+
+<head>
+    <!-- These meta tags are essential for modern HTML documents:
+
+<meta charset="UTF-8"> specifies the character encoding for the HTML document. UTF-8 is a standard encoding that includes most characters from the world's written languages, ensuring that text is displayed correctly.
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> sets the viewport settings for responsive web design. It ensures that the website is properly scaled on different devices, such as smartphones and tablets, making the content look good on all screen sizes. -->
+
+    <!-- Including these meta tags in your HTML head section helps improve compatibility and user experience across various devices and languages. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           @media (max-width: 600px) {
+            .nav{
+                width: 13%;
+                background-color: #131921;
+            }
+        }
+       
+        .nav {
+
+            background-color: #131921;
+            width: 100%;
+            height: 61px;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+
+        .first {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        /* .1{
+            /* No, in most programming languages, you cannot use a number as a class name. Class names typically need to follow the same rules as variable names, which usually means they must start with a letter or an underscore and can be followed by letters, numbers, or underscores. */
+        /* }  */
+        .first ul {
+            box-sizing: border-box;
+            display: flex;
+            list-style: inside;
+            list-style-type: none;
+            margin: 4px 8px;
+            /* Reset margin */
+            padding: 0px;
+            /* Reset padding */
+            gap: 2px;
+            color: white;
+            /* so that whatever we write is shown in white */
+        }
+
+        ul li:not(:nth-child(3)):hover {
+            border: 1px solid white;
+        }
+
+        /* ul:nth-child(1){
+            width: 50px;
+            height: 54px;  
+         background-color: red;
+           /* it may be target to the text node  */
+        /* } */
+
+        ul li:nth-child(1) {
+
+            width: 125px;
+            height: 50px;
+            cursor: pointer;
+
+        }
+
+        ul li img {
+            width: 125px;
+            height: 50px;
+            object-fit: cover;
+            object-position: 50% 50%;
+            position: relative;
+            z-index: 3;
+        }
+
+        ul li:nth-child(2) {
+
+            width: 77px;
+            height: 50px;
+            cursor: pointer;
+            display: inline;
+
+        }
+
+        li div {
+            font-size: 12px;
+            font-weight: 400;
+            display: inline-block;
+            position: absolute;
+            bottom: 35px;
+        }
+
+        li span {
+            font-size: 18px;
+            line-height: 15px;
+            font-weight: 700;
+        }
+
+        ul li:nth-child(3) {
+            box-sizing: border-box;
+            width: 403px;
+            height: 50px;
+            cursor: pointer;
+
+        }
+
+        .second {
+            box-sizing: border-box;
+            width: 400px;
+            height: 41px;
+            position: relative;
+            background-color: rgb(238, 233, 233);
+            top: 5px;
+            border-radius: 5px;
+
+
+        }
+
+        .second i {
+            margin: 0px;
+            padding: 14.5px;
+            background-color: rgb(239, 121, 37);
+            position: relative;
+            left: 2px;
+            top: 0px;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+
+        }
+
+        .second:hover {
+            outline: 3px solid rgb(207, 92, 10);
+        }
+
+        ul li:nth-child(3) i:hover {
+            background-color: rgb(170, 82, 10);
+        }
+
+        .second select {
+            position: relative;
+            color: black;
+            top: 0px;
+            border: 2px solid #edf4f4;
+            padding: 10px;
+            left: 1px;
+            background-color: #edf4f4;
+            border-radius: 2px;
+            cursor: pointer;
+            margin: 0px;
+
+        }
+
+        .second input {
+            border: none;
+            padding: 11px 90px 11px 10px;
+            margin: 0px;
+
+        }
+
+        .four {
+            background-color: #131921;
+            ;
+            position: relative;
+            top: 6px;
+            color: white;
+            padding: 10px 3px 6px 4px;
+            border: none;
+        }
+
+        .lf {
+            padding: 3px;
+        }
+
+        .third {
+            padding: 0px 4px;
+        }
+
+        .five {
+            line-height: 10px;
+            color: white;
+            padding: 5px;
+
+        }
+
+        .five select {
+            background-color: #131921;
+            border: none;
+            color: white;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .six {
+            padding: 0px 5px;
+        }
+
+        .six div {
+            font-size: 12px;
+            padding: 1px;
+        }
+
+        .seven {
+            padding: 16px
+        }
+
+      
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="nav">
+            <nav class="first">
+                <ul>
+                    <li>
+                        <a href="https://www.amazon.com/"> <img src="asset/amazon_logo.png" alt="ll"></a>
+                    </li>
+                    <li><a style="text-decoration: none; color:white;" href="https://www.amazon.com/"><i
+                                style="padding:25px 4px 0px 4px;" class="fa-solid fa-location-dot"></i>
+                            <div>Deliver to</div>
+                            <span>india</span>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="second"> <select name="Fruits" id="Fruit">
+                                <option value="all">All</option>
+                                <option value="apple">Apple</option>
+                                <option value="banana">banana</option>
+                                <option value="cherry">cherry</option>
+                            </select>
+                            <input type="text" name="name" id="kk" placeholder="Search Amazon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </li>
+                    <li class="third"><a style="text-decoration: none; color:white;"
+                            href="https://www.amazon.com/"><select class="four" name="Fruits" id="Fruit">
+                                <option value="all">EN</option>
+
+                            </select>
+
+                        </a>
+
+
+                    </li>
+                    <li class="lf">
+                        <a class="five" href="https://www.amazon.com/">
+                            <div>Hellow,sign in</div><br>
+                            <select name="name" id="signin">
+                                <option value="all"><b>Account & lists</b></option>
+
+                            </select>
+                        </a>
+                    </li>
+                    <li class="six">
+                        <div>Return</div><br>
+                        <b>& Order</b>
+                    </li>
+                    <li class="seven"><i class="fa-solid fa-cart-plus"></i></li>
+                </ul>
+           
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: green;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #08f21f;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.info {
+    margin-top: 10px;
+}
+
+.quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #f26a08;
+    padding: 5px;
+    border-radius: 5px;
+    width: 150px;
+    margin: 0 auto;
+}
+
+button {
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #f26a08;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #f26a08;
+}
+
+.quantity-value {
+    padding: 5px 10px;
+    font-size: 16px;
+    border-left: 1px solid #f26a08;
+    border-right: 1px solid #f26a08;
+    width: 70px;
+    text-align: center;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('https://shaastramag.iitm.ac.in/sites/default/files/2022-08/Agriculture_0.jpg');
+    background-size: cover;
+    color: white;
+    height: 80px;
+    padding: 10px 20px;
+    position: relative;
+  }
+  
+  /* Navbar Left Section */
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-left .logo {
+    margin-right: 40px;
+    font-size: 24px;
+  }
+  
+  .nav-left a {
+    color: #d92323;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  /* Navbar Right Section */
+  .nav-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Search Bar and Icon */
+  .search-bar {
+    width: 300px;
+    padding: 8px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+  }
+  
+  .search-icon {
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .register-btn{
+    margin: 5px;
+  }
+  /* Buttons (Login, Register, Cart) */
+  .login-btn, .register-btn, .cart-btn {
+    background-color: #f26a08;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 12px;
+    margin-left: 10px;
+  }
+  
+  .login-btn i, .cart-btn i {
+    margin-right: 8px;
+  }
+  
+  .login-btn:hover, .register-btn:hover, .cart-btn:hover {
+    background-color: #f26a08;
+  }
+  
+  /* Cart Button to the Right */
+  .cart-btn {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  

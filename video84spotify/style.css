@@ -1,0 +1,546 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+margin: 0px;
+padding: 0;
+font-family: 'Poppins', Roboto, sans-serif;
+}
+body{
+    background-color: black;
+}
+.bg{
+    background-color: #121212;
+}
+.container{
+    display: flex;
+    gap: 14px;
+    margin: 15px;
+}
+.left{
+    width: 23vw;
+    /* border: 2px solid red; */
+    min-height: 600px;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+}
+.right{
+    width: 74vw;
+    /* border: 2px solid red; */
+}
+.up{
+    padding: 3px;
+}
+.fl{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 10px;
+    margin: 7px;
+    list-style: none;
+}
+.invert{
+    filter: invert(1);
+    font-size: 15px;
+}
+.iw{
+    width: 20px;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #464343;
+    height: 58px;
+}
+.down {
+    margin: 10px 0px;
+    min-height: 500px;
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+   /* margin: 15px; */
+   padding: 15px 15px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ 
+}
+.playlist ul{
+        /* overflow: scroll; */
+        overflow: auto;
+        max-height: 350px;
+        list-style: none;
+    display: flex;
+    flex-direction: column;
+           align-items: center;
+           /* justify-content: center; */
+ }
+ .playlist ul li{
+    cursor: pointer;
+    font-size: 12px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: 7px;
+    gap: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    scrollbar-color: #5c5c5c #da1212;
+    border: 1px solid rgb(10, 9, 9);
+ }
+
+ .playlist ul li .honny {
+    filter: invert(1);
+    width: 44px;
+    height: 45px;
+}
+.playlist ul li .over{
+    height: 42px;
+    overflow: hidden;
+    /* overflow: scroll; */
+    width: 115px;
+}
+ .playnow{
+    display: flex;
+    align-items: center;
+    /* justify-content: center;
+     */
+     justify-content: center;
+    gap: 8px;
+ }
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1fr;
+    gap: 5px;
+    position: absolute;
+    bottom: 0px;
+    font-size: 9px;
+    /* padding: 13px; */
+}
+.footer a{
+    
+    color: gray;
+}
+.sign {
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 0px 0px 6px 11px;
+}
+ .but {
+    width: 227px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+}
+.spotify{
+    color: white;
+    margin: 5px 21px 5px 21px;
+   
+}
+.card {
+    border: none;
+    width: 71vw;
+    color: white;
+    margin: 9px 23px;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-height: 72vh;
+    overflow: auto;
+    justify-content: center;
+    /* transition: all 3s ease-in 1s; */
+}
+.card .a1{
+    background-color: #343131;
+    border-radius: 5px;
+    padding: 16px 13px;
+    width: 146px;
+position: relative;
+}
+.a1 > *{
+padding-top: 3px;
+}
+.card img {
+    width: 146px;
+    height: 128px;
+    border-radius: 4px;
+}
+.card .a1 p{
+    font-size: 10px;
+
+}
+/* //************************ */
+
+.card .a1 .but {
+    opacity: 0;
+    bottom: 50px;
+    right: 9px;
+    position: absolute;
+    width: 40px;
+    transform: translate(0, 0);
+    transition: transform 0.3s ease, opacity 0.5s ease;
+}
+.card .a1:hover{
+    background-color: #1f1f1f;
+    border-radius: 7px;
+}
+.card .a1:hover .but{
+    transform: translate(0, -20px); /* Move button upwards by 105px on hover */
+    opacity: 1; /* Change opacity to 1 on hover */
+
+}
+/* transform: translate(0, 0);: This means the button is in its original position (no movement).
+opacity: 0;: The button is fully transparent, meaning it’s not visible.
+transition: ...;: This allows for smooth animation effects for the transform and opacity properties when they change. */
+/* transform: translate(0, -105px);: This moves the button upwards by 105px from its original position. The 0 in the X-axis means there is no horizontal movement; the button remains aligned to the right as defined before.
+opacity: 1;: The button becomes fully visible. */
+
+/* //*************************** */
+.signb{
+    border: none;
+    outline: none;
+    font-weight: bold;
+    color: #978989;
+    background-color: #464343;
+    margin: 0px 15px;
+    box-sizing: border-box;
+}
+.log{
+    border: none;
+    outline: none;
+    font-weight: bold;
+    color: #292929;
+    background-color: #fcfafa;
+    margin: 0px 15px;
+    box-sizing: border-box;
+    padding: 13px 23px;
+    border-radius:23px;
+}
+.signb:hover{
+    color: white;
+    font-size: 14px;
+}
+.log:hover{
+   
+    font-size: 15px;
+}
+.playbar{
+    color: #0b0a0a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #7A5D71;
+    position: fixed;
+    width: 74vw;
+    height: 60px;
+    border-radius: 5px;
+    bottom: 13px;
+    align-items: center;
+    /* filter: invert(1); */
+    /* gap: 10px; */
+}
+
+/* //no need */
+/* .seek{
+    position: relative;
+    z-index: 1;
+    bottom: 0px;
+} */
+
+
+
+#seek_bar{
+    width:72vw;
+    appearance: none;
+    border-radius: 5px;
+    /* this is requird to set the property of cursor */
+    /* background-color: black; */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;  
+}
+
+/* Style the thumb (slider handle) for WebKit browsers */
+
+
+#seek_bar::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    background-color: #cd1b1b;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+   margin-top: -4px;   
+   transition: all 0.3s ease-in-out; 
+}
+/* #seek_bar::-webkit-slider-thumb:hover{
+    transition: background-color 0.3s ease-in-out; 
+} */
+
+/* Style the track (slider track) for WebKit browsers */
+#seek_bar::-webkit-slider-runnable-track {
+    background-color: rgb(0, 17, 255);
+    height: 6px;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out; 
+} 
+#volum{
+    appearance: none;
+    transition: all 0.3s ease-in-out;
+    border-radius: 52px;
+    cursor: pointer;
+}
+
+#volum::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    background-color: #349d28;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+   margin-top: -4px;   
+   transition: all 0.3s ease-in-out; 
+}
+#volum::-webkit-slider-runnable-track {
+    background-color: rgb(255, 106, 0);
+    height: 6px;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out; 
+}
+.track{
+    font-size: 19px;
+        width: 69vw;
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: space-around;
+         */
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr ;
+        transition: all 0.3s ease-in-out; 
+}
+.track .ppn img{
+     width: 29px;
+}
+.hamburger{
+    display: none;
+    height: 38px;
+    cursor: pointer;
+}
+#nd0{
+    display: none;
+    cursor: pointer;
+
+}
+.spotify{
+    font-size: 30px;
+
+    }
+    .track >*{align-self: center;
+        justify-self: center;}
+
+        .track div:nth-child(3){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 18px
+        }
+        .track div:nth-child(3) div:nth-child(1){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 13px
+        }
+@media only screen and  (max-width:1240px){
+    .left{
+       position: absolute;
+       /* position: relative; then not work properly width of right part*/
+       left: -130%;
+       width: 100vw;
+       height: 100vh;
+
+    }
+    #nd0{
+        display: block;
+        height: 38px;
+        
+    }
+    .cutt{
+        position: relative;
+        left: 245px;
+
+    }
+    .right{
+        position: relative;
+        width: 100vw;
+        /* left: -2px; */
+    }
+    .card {
+        max-height: 75vh;
+        width: 99vw;
+        gap: 3px;
+        margin: 0px;
+        align-items: center;
+    }
+    .playbar {
+        width: 100vw;
+        bottom: 11px;
+        height: 123px;
+    }
+    .track,#seek_bar{
+        width: 98vw;   
+    }
+    .track{
+        grid-template-columns: none;
+    }
+    .hamburger{
+        display: block;
+        height: 45px;
+        cursor: pointer;
+    }
+    .container{
+        margin: 0;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    .track{
+        flex-direction: column;
+     
+            font-size: 21px;
+    }
+
+    
+
+
+    .card .a1 img:nth-child(2) {
+        object-fit: cover;
+        width: 96vw;
+        box-sizing: border-box;
+        padding: 7px;
+        height: 347px;
+        border-radius: 4px;
+    } 
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #464343;
+    height: 70px;
+}
+.sign div img{
+width: 34px;
+}
+.but button {
+font-size: 17px;
+}
+
+.card .a1 {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    background-color: #343131;
+    border-radius: 5px;
+    padding: 16px 0px;
+    width: 99vw;
+    height: 422px;
+    position: relative;
+}
+
+.card .a1 h4{
+    font-size: 29px;
+}
+
+.card .a1 p {
+    font-size: 14px;
+}
+
+
+    .card .a1 .but {
+        z-index: 1;
+        opacity: 0;
+        bottom: 112px;
+        right: 52px;
+        position: absolute;
+        width: 80px;
+        transform: translate(0, 0);
+        transition: transform 0.3s ease, opacity 0.5s ease;
+    }
+
+
+
+
+/* left part */
+  .footer {
+    display: grid;
+    grid-template-columns: 2fr 3.5fr 1fr;
+    gap: 5px;
+    position: absolute;
+    bottom: 0px;
+    font-size: 11px;
+   
+}
+.playnow {
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.playnow img{
+    width: 49px;
+}
+.playlist ul li{
+    margin: 9px;
+}
+.playlist ul li .over {
+    font-size: 17px;
+    height: 46px;
+    width: 182px;
+    overflow: hidden;
+}
+.playlist ul li .honny {
+    filter: invert(1);
+    width: 72px;
+    height: 72px;
+}
+.playlist ul {
+   
+    overflow: auto;
+    max-height: 610px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.down {
+margin: 0;
+   min-height: 790px;
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.iw {
+    width: 29px;
+}
+
+.invert {
+    filter: invert(1);
+    font-size: 23px;
+}
+
+    
+}

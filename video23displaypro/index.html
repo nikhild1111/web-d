@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Display Propert</title>
+
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid red;
+            /* display: inline; */
+             /* if we display inline then upper padding and margine will not apply also width not apply */
+           
+              display: inline-block;
+              /*it apply all property corectly*/
+            width: 54px;
+            padding: 45px;
+            margin:34px; 
+        }
+        .box1{
+             /* display:none; */
+            /* it errayes box as well as space */ 
+
+             /* visibility:hidden; */
+          /*  it errayes box only not  space */
+
+             display:flex;
+             justify-content: center;
+             /* most of the time it is use to go text at center */
+             
+               /* all block go dowen  */
+            /* display: inline-flex;  */
+            /* all box in one line */
+           
+            
+           
+
+        }
+    </style>
+</head>
+<body>
+     <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+     <div class="box box1"> I am a box</div>
+     <div class="box box2"> also a nice box</div>
+     <span>i am a good</span>
+     <span>boy</span>
+    
+</body>
+</html>

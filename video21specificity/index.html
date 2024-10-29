@@ -1,0 +1,127 @@
+<!-- if all the selector are same then last one is select
+Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector
+origin :-if we not add style then browser  add its own style(user agent stylesheet) 
+and when we add our own style then it will override 
+importent is more importent it appare first -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css specificity & CAscade</title>
+    <style>
+/*A combinator is something that explains the relationship between the selectors.
+
+A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.
+
+There are four different combinators in CSS:
+
+descendant selector (space)
+child selector (>)
+adjacent sibling selector (+)
+general sibling selector (~)
+*/
+/* https://www.w3schools.com/css/css_combinators.asp */
+
+
+
+
+
+
+
+
+
+
+
+      /* element selector */
+      /* sp=1 */
+        h1 {
+            color: red;
+        }
+
+        /* sp=100 */
+        #my {
+            color: aqua;
+        }
+
+        /* sp=10 */
+        .yellow {
+            color: yellow;
+        }
+
+        /* sp=10 */
+        .blue {
+            color: blue
+        }
+
+        /* sp=10 */
+        .puprle {
+            color: purple;
+        }
+
+        /* sp=10 */
+        /* attribute selector */
+        [data-x=a] {
+            color: chartreuse !important;
+        }
+       
+       /* sp=1+10=11 */
+        h1.yellow{
+            color: magenta;
+        }
+
+
+        /* The attribute data-x="a" is an example of a custom data attribute in HTML. Custom data attributes are used to store extra information directly on HTML elements, which can be accessed via JavaScript. */
+
+
+        /* Custom data attributes are created by adding attributes to HTML elements that begin with data- followed by a custom name. Here’s a step-by-step guide on how to create and use custom data attributes: */
+
+
+        /* href is attribute selector it means if hreaf is present then add specificity */
+        /* sp=1+10+10+10+10=41     for psudeo sp=10*/
+        /* href=src=data-x=this all are attribute */
+        a.harryclass.rohan-class[href]:hover {
+  color: blueviolet;
+}
+/*******************iiiiiiiiimmmmmmmmmmmppppppppppp
+
+In CSS, the way selectors are constructed and combined determines which elements are targeted and how specific criteria are applied. Let's clarify how classes and attributes are combined in CSS selectors, and why the . (period) is not used between attributes and classes.
+
+Combining Selectors in CSS
+Class Selectors:
+
+Syntax: .classname
+Purpose: Targets elements with a specific class attribute.
+Example: .harryclass targets any element with the class harryclass.
+Attribute Selectors:
+
+Syntax: [attribute] or [attribute=value]
+Purpose: Targets elements with a specific attribute or attribute value.
+Example: [href] targets any element with an href attribute, regardless of its value.
+Combining Multiple Classes:
+
+Syntax: .class1.class2
+Purpose: Targets elements that have both class1 and class2 classes.
+Example: .harryclass.rohan-class targets elements with both classes.
+Combining Attribute Selectors and Classes:
+
+Syntax: element.class[attribute]
+Purpose: Targets elements that match both class and attribute criteria.
+Example: a.harryclass[link] targets <a> elements with the class harryclass and an href attribute.
+*/
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <h1 style="color: green;" id="my" class="yellow blue puprle" data-x="a">Inline Style > ID Selector > Class or
+            Attribute Selector > Element Selector > Universal Selector</h1>
+        <h2>important is more important it appare first
+        </h2>
+        <h3>if we use the same selector like class or any other then the last one is select</h3>
+    </div>
+</body>
+
+</html>

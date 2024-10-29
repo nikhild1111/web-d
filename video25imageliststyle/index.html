@@ -1,0 +1,72 @@
+<!-- display:list-item; it is for list by default
+list contain marker and list item 
+marker is not in list item-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image and list style</title>
+    <style>
+        nav ol li{
+        padding: 15px;
+/* The list-style property in CSS is a(Short form:) shorthand for setting all the list-style properties (such as list-style-type, list-style-position, and list-style-image) in one declaration. The list-style-type property specifies the type of marker to be used in a list, and list-style-position specifies the position of the marker (inside or outside). */
+             list-style:"🫵";
+             /*marker in devnagri */
+           
+            /* by using the list-style property we can set all the property but using the list-style-type:  we can set type of merker;   */
+          
+            /* list-style: circle inside url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3L9MV0234Cyei2owQ5uV9u-w6v2g7X92LFgGck6wZqg&s"); */
+            /* list-style-position: inside;: This sets the position of the list item marker inside the content flow of the list item. The marker will appear before the text content but within the padding of the list item. The other value can be outside, where the marker is outside the content flow of the list item. */
+/*           
+            circle as a Fallback:
+
+The circle part is essentially a fallback. If the specified image (url('path/to/image.png')) cannot be loaded or displayed for any reason, the list marker will fall back to a hollow circle.
+inside Positioning:
+
+The inside value determines that the marker (whether it's an image or the fallback circle) will be positioned within the list item’s padding area, causing the list item text to align with the marker.
+url('path/to/image.png'):
+
+This part specifies the actual image to be used as the list marker. It takes precedence over the circle marker if the image is successfully loaded. */
+
+
+
+            /* list-style-type:"🫵"; */
+            /*emoji set as a marker*/
+            /* for list-style-type can be disc, square, decimal, etc. */
+           
+            
+    /* list-style: "🫵" inside url('path/to/image.png');  */
+    /* can we do this */
+/* answer = in the technical form no  but yes we can do this in this case emoji is set as list-type if the image is not loaded successfuly*/
+ 
+/* ChatGPT=///just for knolage not imp That's correct. The list-style shorthand property and its related properties (list-style-type, list-style-image, and list-style-position) do not support combining an image and a custom string (like an emoji) together as list markers directly. */ 
+
+
+            /* background-color: yellow; */
+             /* only li bg yellow */ 
+             /* list-style-position: inside; */
+             /* now marker is also include */
+         
+             border: 2px solid black;
+         /* list-style-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3L9MV0234Cyei2owQ5uV9u-w6v2g7X92LFgGck6wZqg&s"); */
+         /* set the marker as image */
+     
+         list-style: disc inside url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3L9MV0234Cyei2owQ5uV9u-w6v2g7X92LFgGck6wZqg&s"); 
+       /* disc or url*/ 
+
+
+
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <ol>
+            <li>home</li>
+        <li>about</li>
+    <li>me</li>
+</ol>
+    </nav>
+</body>
+</html>

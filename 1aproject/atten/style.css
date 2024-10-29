@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#attendanceForm {
+    margin-bottom: 20px;
+}
+
+#attendanceList {
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-width: 300px;
+}
+
+#attendanceItems {
+    list-style-type: none;
+    padding: 0;
+}
+
+#attendanceItems li {
+    margin-bottom: 5px;
+}

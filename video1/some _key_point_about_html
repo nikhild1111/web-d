@@ -1,0 +1,180 @@
+
+Never Skip the End Tag
+Some HTML elements will display correctly, even if you forget the end tag:
+
+Example
+<html>
+<body>
+
+<p>This is a paragraph
+<p>This is a paragraph
+
+</body>
+</html>
+
+
+Bigger Headings
+Each HTML heading has a default size. However, you can specify the size for any heading with the style attribute, using the CSS font-size property:
+
+Example
+<h1 style="font-size:60px;">Heading 1</h1>
+
+
+
+The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
+
+The <hr> element is used to separate content (or define a change) in an HTML page:
+
+Example
+<h1>This is heading 1</h1>
+<p>This is some text.</p>
+<hr>
+<h2>This is heading 2</h2>
+<p>This is some other text.</p>
+<hr>
+The <hr> tag is an empty tag, which means that it has no end tag.
+
+
+Solution - The HTML <pre> Element
+    The HTML <pre> element defines preformatted text.
+    
+    The text inside a <pre> element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks:
+    
+    Example
+    <pre>
+      My Bonnie lies over the ocean.
+    
+      My Bonnie lies over the sea.
+    
+      My Bonnie lies over the ocean.
+    
+      Oh, bring back my Bonnie to me.
+    </pre>
+
+
+    The HTML Style Attribute
+Setting the style of an HTML element, can be done with the style attribute.
+
+The HTML style attribute has the following syntax:
+
+<tagname style="property:value;">
+
+
+    Background Color
+The CSS background-color property defines the background color for an HTML element.
+
+Example
+Set the background color for a page to powderblue:
+
+<body style="background-color:powderblue;">
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+
+Text Color
+The CSS color property defines the text color for an HTML element:
+
+Example
+<h1 style="color:blue;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+
+HTML Formatting Elements
+Formatting elements were designed to display special types of text:
+
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
+
+    <!DOCTYPE html>
+<html>
+<body>
+
+<p>This text is normal.</p>
+
+<p><b>This text is bold.</b>
+
+    <i>This text is italic</i>
+    <small>This is some smaller text.</small></p>
+
+</body>
+</html>
+
+
+///////////
+Hide Inline Content
+Comments can be used to hide parts in the middle of the HTML code.
+
+Example
+Hide a part of a paragraph:
+
+<p>This <!-- great text --> is a paragraph.</p>
+
+Using CSS
+CSS can be added to HTML documents in 3 ways:
+
+Inline - by using the style attribute inside HTML elements
+Internal - by using a <style> element in the <head> section
+External - by using a <link> element to link to an external CSS file
+The most common way to add CSS, is to keep the styles in external CSS files. However, in this tutorial we will use inline and internal styles, because this is easier to demonstrate, and easier for you to try it yourself.
+
+Inline CSS
+An inline CSS is used to apply a unique style to a single HTML element.
+
+An inline CSS uses the style attribute of an HTML element.
+
+The following example sets the text color of the <h1> element to blue, and the text color of the <p> element to red:
+
+Example
+<h1 style="color:blue;">A Blue Heading</h1>
+
+<p style="color:red;">A red paragraph.</p>
+
+
+The target attribute can have one of the following values:
+_self - Default. Opens the document in the same window/tab as it was clicked
+_blank - Opens the document in a new window or tab
+_parent - Opens the document in the parent frame
+_top - Opens the document in the full body of the window
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+
+
+Absolute URLs vs. Relative URLs
+Both examples above are using an absolute URL (a full web address) in the href attribute.
+
+A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part):
+
+Example
+<h2>Absolute URLs</h2>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h2>Relative URLs</h2>
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+
+HTML Links - Use an Image as a Link
+To use an image as a link, just put the <img> tag inside the <a> tag:
+
+Example
+<a href="default.asp">
+<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+
+
+//////
+Link to an Email Address
+Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email):
+
+Example
+<a href="mailto:someone@example.com">Send email</a>

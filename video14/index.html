@@ -1,0 +1,58 @@
+<!--we can add css by using style
+color=red; that is property=value;
+div,span{
+    color=red; here div ,span are the selector
+}-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>introduction to css</title>
+<style>
+    body{
+        background-image: url(b.jpg);
+      /* width: 200px; */
+        /* height: 100vp;wrong */
+        /* height: 100vh; */
+        background-size: cover;
+        /* background-size: 100vp 200vh; 
+        The reason background-size: 100vp 200vh; is incorrect is because "vp" is not a valid CSS unit. The valid units for setting sizes in CSS include:
+
+px (pixels)
+% (percentage)
+em (relative to the font-size of the element)
+rem (relative to the font-size of the root element)
+vw (viewport width)
+vh (viewport height)
+vmin (minimum of viewport width and height)
+vmax (maximum of viewport width and height) */
+background-size: 100vw 200vh;    
+background-repeat: no-repeat;
+        /* Or contain, auto, 100% 100%, etc.
+        /* background-size: {width}; wrong */
+        background-position: center;
+        margin: 0;
+        padding: 0;
+    }
+    div,span{
+        /* element selector */
+        line-height: 25px;
+        background-color: red;
+        color:yellow;
+    }
+</style>
+</head>
+<body>
+    <div>
+        iam block element
+    </div>
+    <span>
+        i am inline element 
+    </span>
+    <span>i am also inline </span>
+    <div> i am also block</div>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse a voluptates inventore sunt fuga veniam, ab aliquid quo excepturi asperiores, rem vel magni quis deserunt non ea optio id facilis temporibus. Atque!</p>
+</body>
+</html>

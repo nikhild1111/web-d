@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script Dom</title>
+</head> 
+<!-- In the context of web development, the Document Object Model (DOM) represents the structure of a web page as a tree of objects. Each element in an HTML document, such as paragraphs, headings, images, forms, etc., is represented by an object in the DOM. These objects have properties and methods that developers can use to manipulate the content, structure, and style of the web page dynamically through scripting languages like JavaScript.
+
+For instance, if you have an HTML element like this:
+
+html
+Copy code
+<div id="myDiv">Hello, World!</div>
+You can access this element in JavaScript using its ID attribute and manipulate it as an object:
+
+javascript
+Copy code
+var myDiv = document.getElementById('myDiv'); // Accessing the div element
+myDiv.innerHTML = 'Goodbye, World!'; // Changing its content
+In this example, myDiv is an object representing the <div> element in the DOM. By accessing this object, you can modify its properties (like innerHTML in this case) and call its methods to dynamically change the content and behavior of the web page.
+
+//**********
+    An object in the DOM is a JavaScript representation of an element, attribute, or text node in an HTML or XML document.
+    //****** It provides an interface for accessing and manipulating the properties and content of the corresponding element within the document's (html)structure. -->
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+    <script>
+        //dom:-it is use to map the entire html as an documentary or it mapping of entire document in a object(inside which we got content of page)
+
+    // -the entire html is converted into the  tree like structure while we use the dom
+    //it is use to change the element or the text present inside the element
+    // it will add inline css in it
+
+    //by using js and dom we can target differnt element  and add css on them change css add them to dom remove from dom
+
+    
+    //bom
+    //when we want to work with other then document then we use bom which provide additional object
+
+    //************The element which we select is consider as a $0 brower provide this utility to us so that we can select perticular element and we can add style on it
+   
+   
+   document.title="Haary is good";
+   console.log(document.title)
+   console.log(document.body)
+   document.body.style.backgroundcolor="green";
+   
+//    window is globale object
+
+   </script>
+</body>
+</html>

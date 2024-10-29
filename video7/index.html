@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form_letslearn it</title>
+</head>
+<body><div>
+    <form action="post">
+ <h1>form to apply for sigma web d cource
+    </h1>
+    <!-- The <label> HTML element represents a caption for an item in a user interface.  -->
+        <!-- The for attribute in the label should match the id of the input field (id="username"). This association allows users to click on the label to focus on or activate the corresponding form element (in this case, the username input field). -->
+        <!-- <label>: This is an HTML tag used to define a label for an HTML form element.
+            for="username": This attribute specifies which form element the label is associated with. In this case, it should match the id attribute of the input element you want to associate with this label. -->
+
+        <label for="username">Enter Your Name </label> 
+       <input type="text" name="username" id="username" placeholder="Enter Your Name"  autofocus>
+       <!-- value="Male" this default value given to cha input -->
+    </div>
+    <div>
+        <input type="radio" name="gender" id="Male" value="Male">
+        <label for="Male">Male</label-->
+        <input type="radio" name="gender" id="Female" value="Female">
+        <label for="Female">Female</label-->
+            <!-- ****when we select male or female one of them select becuse data will go as  gender=value (male or female) to the server so only one we can select -->
+ <!-- name is the spetiale attribute in input tag whatever value we give in the input is store inside the input
+    lebel tag is use for specific input in which give id and the lebel is give for the input tag
+   value is male for first and female for second
+-->   
+<!-- *******name attribute(for identification of input field) is used for form controll means when we submit data data will send as username=JohnDoe123 (name=value) by browser  so thaat server can identifies the input field as "username". -->
+<!-- name="username" identifies the input field as "username".
+value="JohnDoe123" sets the initial value of the input field to "JohnDoe123".
+When the form is submitted (<button type="submit">Submit</button>), the browser sends username=JohnDoe123 as part of the form data to the server.
+Summary:
+name Attribute: Identifies the form control so that its data can be processed on the server or manipulated with client-side scripts.
+value Attribute: Specifies the initial value of a form control or represents the current value entered by the user.
+These attributes work together to manage and process user input in HTML forms. If you have further questions or need more clarification, feel free to ask!         -->
+    </div>
+    <div>
+        <input type="checkbox" name="subscribe" id="subscribe" value="yes">
+        <label for="subscibe">subscribe to my channel </label>
+    </div><label for="Enter">Enter your comment</label>
+   <div><textarea name="connent" id="Enter" cols="30" rows="10"> </textarea>
+  <div>
+    <select name="Fruits" id="Fruit">
+        <option value="apple">Apple</option>
+        <option value="banana">banana</option>
+        <option value="cherry">cherry</option>
+    </select>
+  </div>
+</div> 
+</form>
+</body>
+</html>
+
+<!--action send form at any page
+by using name server know that valuw is corrsponding to which key
+requirrd always return value
+pattern also use
+if we not give -- at end then it will ccomment all other things

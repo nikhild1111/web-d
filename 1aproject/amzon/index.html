@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<!-- In HTML, when you have many <option> elements inside a <select> tag, the spacing between the text and the dropdown icon (usually a down arrow) might increase due to the default styling of the browser. However, this behavior can be controlled and styled using CSS. -->
+
+    <!-- sometimes position propery is required because document go outside the normal document flow and we cant use display fle and grid property -->
+
+<html lang="en">
+
+<head>
+    <!-- These meta tags are essential for modern HTML documents:
+
+<meta charset="UTF-8"> specifies the character encoding for the HTML document. UTF-8 is a standard encoding that includes most characters from the world's written languages, ensuring that text is displayed correctly.
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> sets the viewport settings for responsive web design. It ensures that the website is properly scaled on different devices, such as smartphones and tablets, making the content look good on all screen sizes. -->
+
+    <!-- Including these meta tags in your HTML head section helps improve compatibility and user experience across various devices and languages. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    
+</style>
+    </head>
+
+<body >
+
+
+    <div class="nav">
+        <nav class="first">
+            <ul>
+                <li>
+                    <a href="https://www.amazon.com/"> <img src="asset/amazon_logo.png" alt="ll"></a>
+                </li>
+                <li><a style="text-decoration: none; color:white;" href="https://www.amazon.com/"><i
+                            style="padding:25px 4px 0px 4px;" class="fa-solid fa-location-dot"></i>
+                        <div>Deliver to</div>
+                        <span>india</span>
+                    </a>
+                </li>
+                <li>
+                    <div class="second"> <select name="Fruits" id="Fruit">
+                            <option value="all">All</option>
+                            <option value="apple">Apple</option>
+                            <option value="banana">banana</option>
+                            <option value="cherry">cherry</option>
+                        </select>
+                        <input type="text" name="name" id="kk" placeholder="Search Amazon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </li>
+                <li class="third"><a style="text-decoration: none; color:white;" href="https://www.amazon.com/"><select
+                            class="four" name="Fruits" id="Fruit">
+                            <option value="all">EN</option>
+
+                        </select>
+
+                    </a>
+
+
+                </li>
+                <li class="lf">
+                    <a class="five" href="https://www.amazon.com/">
+                        <div>Hellow,sign in</div><br>
+                        <select name="name" id="signin">
+                            <option value="all"><b>Account & lists</b></option>
+
+                        </select>
+                    </a>
+                </li>
+                <li class="six">
+                    <div>Return</div><br>
+                    <b>& Order</b>
+                </li>
+                <li class="seven"><i class="fa-solid fa-cart-plus"></i></li>
+            </ul>
+
+    </div>
+
+    <ul class="content">
+        <li><i class="fa-solid fa-bars"></i> All</li>
+        <li> Today's Deals</li>
+        <li> Customer Service</li>
+        <li> Registry</li>
+        <li>Gift Cards</li>
+        <li>Sell</li>
+    </ul>
+    <div class="bimg">
+        <img src="https://m.media-amazon.com/images/I/61lwJy4B8PL._SX3000_.jpg" alt="">
+    </div>
+    <div class="iAmzon">You are on amazon.com. You can also shop on Amazon India for millions of products with fast
+        local delivery. <a
+            href="https://www.amazon.in/?&tag=googhydrabk1-21&ref=pd_sl_7hz2t19t5c_e&adgrpid=155259815513&hvpone=&hvptwo=&hvadid=674842289437&hvpos=&hvnetw=g&hvrand=416159724706956453&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9304071&hvtargid=kwd-10573980&hydadcr=14453_2316415&gad_source=1">Click
+            here to go to amazon.in</a></div>
+    <ul class="tax">
+        <li><b class="de">Deals in PCs</b>
+            <img src="asset\Fuji_Desktop_Single_image_EBF_1x_v1._SY304_CB573698005_.jpg" alt="">
+            <a 
+                href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">See all deals</a>
+        </li>
+        <li><b class="de">Gamming accessoriese</b>
+            <div class="char">
+              <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg" alt=""><span>headsets</span></a> 
+              <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg" alt=""><span>keybord</span></a> 
+                <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">    <img src="asset\Fuji_Quad_Mouse_1x._SY116_CB667159063_.jpg" alt=""><span>Computer mice</span></a> 
+                    <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">   <img src="asset\Fuji_Quad_Chair_1x._SY116_CB667159060_.jpg" alt=""><span>Chairs</span></a> 
+            </div>
+            <a 
+                href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">Show
+                more</a></li>
+        <li><b class="de">Shop deals in Fashion</b>
+            <div class="char">
+              <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\DQC_APR_TBYB_W_BOTTOMS_1x._SY116_CB624172947_.jpg" alt=""><span>Jeans under $50</span></a> 
+              <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\DQC_APR_TBYB_W_TOPS_1x._SY116_CB623353881_.jpg" alt=""><span>Tops under $25</span></a> 
+                <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">    <img src="asset\DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg" alt=""><span>Dresses under $30</span></a> 
+                    <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">   <img src="asset\DQC_APR_TBYB_W_SHOES_1x._SY116_CB624172947_.jpg" alt=""><span>Shoes under $50</span></a> 
+            </div>
+            <a 
+                href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">See all deals
+                </a></li>
+                <li class="cut"><b class="de">Refresh your space</b>
+                    <div class="char">
+                      <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\DesktopQuadCat_186x116_LP-HP_B08MYX5Q2W_01.23._SY116_CB619238939_.jpg" alt=""><span>dining</span></a> 
+                      <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\DesktopQuadCat_186x116_kitchen_B0126LMDFK_01.23._SY116_CB619238939_.jpg" alt=""><span>kitchen</span></a> 
+                        <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">    <img src="asset\DesktopQuadCat_186x116_home_B08RCCP3HV_01.23._SY116_CB619238939_.jpg" alt=""><span>home</span></a> 
+                            <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">   <img src="asset\DesktopQuadCat_186x116_health-beauty_B07662GN57_01.23._SY116_CB619238939_.jpg" alt=""><span>dining & beuty</span></a> 
+                    </div>
+                    <a 
+                        href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">Show
+                        more</a></li>
+    </ul>
+    <ul class="tax">
+        <li><b class="de">Deals in PCs</b>
+            <img src="asset\Fuji_Desktop_Single_image_EBF_1x_v1._SY304_CB573698005_.jpg" alt="">
+            <a 
+                href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">See all deals</a>
+        </li>
+        <li><b class="de">Gamming accessoriese</b>
+            <div class="char">
+              <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg" alt=""><span>headsets</span></a> 
+              <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg" alt=""><span>keybord</span></a> 
+                <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">    <img src="asset\Fuji_Quad_Mouse_1x._SY116_CB667159063_.jpg" alt=""><span>Computer mice</span></a> 
+                    <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">   <img src="asset\Fuji_Quad_Chair_1x._SY116_CB667159060_.jpg" alt=""><span>Chairs</span></a> 
+            </div>
+            <a 
+                href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">Show
+                more</a></li>
+        <li><b class="de">Shop deals in Fashion</b>
+            <div class="char">
+              <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\DQC_APR_TBYB_W_BOTTOMS_1x._SY116_CB624172947_.jpg" alt=""><span>Jeans under $50</span></a> 
+              <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\DQC_APR_TBYB_W_TOPS_1x._SY116_CB623353881_.jpg" alt=""><span>Tops under $25</span></a> 
+                <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">    <img src="asset\DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg" alt=""><span>Dresses under $30</span></a> 
+                    <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">   <img src="asset\DQC_APR_TBYB_W_SHOES_1x._SY116_CB624172947_.jpg" alt=""><span>Shoes under $50</span></a> 
+            </div>
+            <a 
+                href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">See all deals
+                </a></li>
+                <li class="cut"><b class="de">Refresh your space</b>
+                    <div class="char">
+                      <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\DesktopQuadCat_186x116_LP-HP_B08MYX5Q2W_01.23._SY116_CB619238939_.jpg" alt=""><span>dining</span></a> 
+                      <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\DesktopQuadCat_186x116_kitchen_B0126LMDFK_01.23._SY116_CB619238939_.jpg" alt=""><span>kitchen</span></a> 
+                        <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">    <img src="asset\DesktopQuadCat_186x116_home_B08RCCP3HV_01.23._SY116_CB619238939_.jpg" alt=""><span>home</span></a> 
+                            <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">   <img src="asset\DesktopQuadCat_186x116_health-beauty_B07662GN57_01.23._SY116_CB619238939_.jpg" alt=""><span>dining & beuty</span></a> 
+                    </div>
+                    <a 
+                        href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">Show
+                        more</a></li>
+    </ul>
+    <div class="mid">
+        <div>Best Sellers in Cell Phones & Accessories</div>
+        <img src="asset\71QPduoKd1L._AC_SY200_.jpg" alt="">
+        <img src="asset\81F99hab1GL._AC_SY200_.jpg" alt="">
+        <img src="asset\71vYeYqdvUL._AC_SY200_.jpg" alt="">
+        <img src="asset\61h+qeD-qfL._AC_SY200_.jpg" alt="">
+        <img src="asset\51jd6JrnPrL._AC_SY200_.jpg" alt="">
+        <img src="asset\51IFiSD+kCL._AC_SY200_.jpg" alt="">
+        <img src="asset\61d46oYQgdL._AC_SY200_.jpg" alt="">
+        <img src="asset\71SEZvg1spL._AC_SY200_ (1).jpg" alt="">
+        <img src="asset\51wX5vhTB4L._AC_SY200_.jpg" alt="">
+    </div>
+    <div class="mid">
+        <div>Best Sellers in Cell Phones & Accessories</div>
+        <img src="asset\71QPduoKd1L._AC_SY200_.jpg" alt="">
+        <img src="asset\81F99hab1GL._AC_SY200_.jpg" alt="">
+        <img src="asset\71vYeYqdvUL._AC_SY200_.jpg" alt="">
+        <img src="asset\61h+qeD-qfL._AC_SY200_.jpg" alt="">
+        <img src="asset\51jd6JrnPrL._AC_SY200_.jpg" alt="">
+        <img src="asset\51IFiSD+kCL._AC_SY200_.jpg" alt="">
+        <img src="asset\61d46oYQgdL._AC_SY200_.jpg" alt="">
+        <img src="asset\71SEZvg1spL._AC_SY200_ (1).jpg" alt="">
+        <img src="asset\51wX5vhTB4L._AC_SY200_.jpg" alt="">
+    </div>
+    <ul class="tax">
+        <li><b class="de">Deals in PCs</b>
+            <img src="asset\Fuji_Desktop_Single_image_EBF_1x_v1._SY304_CB573698005_.jpg" alt="">
+            <a 
+                href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">See all deals</a>
+        </li>
+        <li><b class="de">Gamming accessoriese</b>
+            <div class="char">
+              <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg" alt=""><span>headsets</span></a> 
+              <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg" alt=""><span>keybord</span></a> 
+                <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">    <img src="asset\Fuji_Quad_Mouse_1x._SY116_CB667159063_.jpg" alt=""><span>Computer mice</span></a> 
+                    <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">   <img src="asset\Fuji_Quad_Chair_1x._SY116_CB667159060_.jpg" alt=""><span>Chairs</span></a> 
+            </div>
+            <a 
+                href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">Show
+                more</a></li>
+        <li><b class="de">Shop deals in Fashion</b>
+            <div class="char">
+              <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\DQC_APR_TBYB_W_BOTTOMS_1x._SY116_CB624172947_.jpg" alt=""><span>Jeans under $50</span></a> 
+              <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\DQC_APR_TBYB_W_TOPS_1x._SY116_CB623353881_.jpg" alt=""><span>Tops under $25</span></a> 
+                <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">    <img src="asset\DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg" alt=""><span>Dresses under $30</span></a> 
+                    <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">   <img src="asset\DQC_APR_TBYB_W_SHOES_1x._SY116_CB624172947_.jpg" alt=""><span>Shoes under $50</span></a> 
+            </div>
+            <a 
+                href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">See all deals
+                </a></li>
+                <li class="cut"><b class="de">Refresh your space</b>
+                    <div class="char">
+                      <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\DesktopQuadCat_186x116_LP-HP_B08MYX5Q2W_01.23._SY116_CB619238939_.jpg" alt=""><span>dining</span></a> 
+                      <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\DesktopQuadCat_186x116_kitchen_B0126LMDFK_01.23._SY116_CB619238939_.jpg" alt=""><span>kitchen</span></a> 
+                        <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">    <img src="asset\DesktopQuadCat_186x116_home_B08RCCP3HV_01.23._SY116_CB619238939_.jpg" alt=""><span>home</span></a> 
+                            <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">   <img src="asset\DesktopQuadCat_186x116_health-beauty_B07662GN57_01.23._SY116_CB619238939_.jpg" alt=""><span>dining & beuty</span></a> 
+                    </div>
+                    <a 
+                        href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">Show
+                        more</a></li>
+    </ul>
+    <div class="mid">
+        <div>Best Sellers in Cell Phones & Accessories</div>
+        <img src="asset\71QPduoKd1L._AC_SY200_.jpg" alt="">
+        <img src="asset\81F99hab1GL._AC_SY200_.jpg" alt="">
+        <img src="asset\71vYeYqdvUL._AC_SY200_.jpg" alt="">
+        <img src="asset\61h+qeD-qfL._AC_SY200_.jpg" alt="">
+        <img src="asset\51jd6JrnPrL._AC_SY200_.jpg" alt="">
+        <img src="asset\51IFiSD+kCL._AC_SY200_.jpg" alt="">
+        <img src="asset\61d46oYQgdL._AC_SY200_.jpg" alt="">
+        <img src="asset\71SEZvg1spL._AC_SY200_ (1).jpg" alt="">
+        <img src="asset\51wX5vhTB4L._AC_SY200_.jpg" alt="">
+    </div>
+    <div class="mid">
+        <div>Best Sellers in Cell Phones & Accessories</div>
+        <img src="asset\71QPduoKd1L._AC_SY200_.jpg" alt="">
+        <img src="asset\81F99hab1GL._AC_SY200_.jpg" alt="">
+        <img src="asset\71vYeYqdvUL._AC_SY200_.jpg" alt="">
+        <img src="asset\61h+qeD-qfL._AC_SY200_.jpg" alt="">
+        <img src="asset\51jd6JrnPrL._AC_SY200_.jpg" alt="">
+        <img src="asset\51IFiSD+kCL._AC_SY200_.jpg" alt="">
+        <img src="asset\61d46oYQgdL._AC_SY200_.jpg" alt="">
+        <img src="asset\71SEZvg1spL._AC_SY200_ (1).jpg" alt="">
+        <img src="asset\51wX5vhTB4L._AC_SY200_.jpg" alt="">
+    </div>
+    <ul class="tax">
+        <li><b class="de">Deals in PCs</b>
+            <img src="asset\Fuji_Desktop_Single_image_EBF_1x_v1._SY304_CB573698005_.jpg" alt="">
+            <a 
+                href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">See all deals</a>
+        </li>
+        <li><b class="de">Gamming accessoriese</b>
+            <div class="char">
+              <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg" alt=""><span>headsets</span></a> 
+              <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg" alt=""><span>keybord</span></a> 
+                <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">    <img src="asset\Fuji_Quad_Mouse_1x._SY116_CB667159063_.jpg" alt=""><span>Computer mice</span></a> 
+                    <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">   <img src="asset\Fuji_Quad_Chair_1x._SY116_CB667159060_.jpg" alt=""><span>Chairs</span></a> 
+            </div>
+            <a 
+                href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">Show
+                more</a></li>
+        <li><b class="de">Shop deals in Fashion</b>
+            <div class="char">
+              <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\DQC_APR_TBYB_W_BOTTOMS_1x._SY116_CB624172947_.jpg" alt=""><span>Jeans under $50</span></a> 
+              <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\DQC_APR_TBYB_W_TOPS_1x._SY116_CB623353881_.jpg" alt=""><span>Tops under $25</span></a> 
+                <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">    <img src="asset\DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg" alt=""><span>Dresses under $30</span></a> 
+                    <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">   <img src="asset\DQC_APR_TBYB_W_SHOES_1x._SY116_CB624172947_.jpg" alt=""><span>Shoes under $50</span></a> 
+            </div>
+            <a 
+                href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">See all deals
+                </a></li>
+                <li class="cut"><b class="de">Refresh your space</b>
+                    <div class="char">
+                      <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\DesktopQuadCat_186x116_LP-HP_B08MYX5Q2W_01.23._SY116_CB619238939_.jpg" alt=""><span>dining</span></a> 
+                      <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\DesktopQuadCat_186x116_kitchen_B0126LMDFK_01.23._SY116_CB619238939_.jpg" alt=""><span>kitchen</span></a> 
+                        <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">    <img src="asset\DesktopQuadCat_186x116_home_B08RCCP3HV_01.23._SY116_CB619238939_.jpg" alt=""><span>home</span></a> 
+                            <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">   <img src="asset\DesktopQuadCat_186x116_health-beauty_B07662GN57_01.23._SY116_CB619238939_.jpg" alt=""><span>dining & beuty</span></a> 
+                    </div>
+                    <a 
+                        href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">Show
+                        more</a></li>
+    </ul>
+    <ul class="tax">
+        <li><b class="de">Deals in PCs</b>
+            <img src="asset\Fuji_Desktop_Single_image_EBF_1x_v1._SY304_CB573698005_.jpg" alt="">
+            <a 
+                href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">See all deals</a>
+        </li>
+        <li><b class="de">Gamming accessoriese</b>
+            <div class="char">
+              <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg" alt=""><span>headsets</span></a> 
+              <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg" alt=""><span>keybord</span></a> 
+                <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">    <img src="asset\Fuji_Quad_Mouse_1x._SY116_CB667159063_.jpg" alt=""><span>Computer mice</span></a> 
+                    <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">   <img src="asset\Fuji_Quad_Chair_1x._SY116_CB667159060_.jpg" alt=""><span>Chairs</span></a> 
+            </div>
+            <a 
+                href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">Show
+                more</a></li>
+        <li><b class="de">Shop deals in Fashion</b>
+            <div class="char">
+              <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\DQC_APR_TBYB_W_BOTTOMS_1x._SY116_CB624172947_.jpg" alt=""><span>Jeans under $50</span></a> 
+              <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\DQC_APR_TBYB_W_TOPS_1x._SY116_CB623353881_.jpg" alt=""><span>Tops under $25</span></a> 
+                <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">    <img src="asset\DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg" alt=""><span>Dresses under $30</span></a> 
+                    <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">   <img src="asset\DQC_APR_TBYB_W_SHOES_1x._SY116_CB624172947_.jpg" alt=""><span>Shoes under $50</span></a> 
+            </div>
+            <a 
+                href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">See all deals
+                </a></li>
+                <li class="cut" ><b class="de">Refresh your space</b>
+                    <div class="char">
+                      <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\DesktopQuadCat_186x116_LP-HP_B08MYX5Q2W_01.23._SY116_CB619238939_.jpg" alt=""><span>dining</span></a> 
+                      <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\DesktopQuadCat_186x116_kitchen_B0126LMDFK_01.23._SY116_CB619238939_.jpg" alt=""><span>kitchen</span></a> 
+                        <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">    <img src="asset\DesktopQuadCat_186x116_home_B08RCCP3HV_01.23._SY116_CB619238939_.jpg" alt=""><span>home</span></a> 
+                            <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">   <img src="asset\DesktopQuadCat_186x116_health-beauty_B07662GN57_01.23._SY116_CB619238939_.jpg" alt=""><span>dining & beuty</span></a> 
+                    </div>
+                    <a 
+                        href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">Show
+                        more</a></li>
+    </ul>
+    <div class="mid">
+        <div>Best Sellers in Cell Phones & Accessories</div>
+        <img src="asset\71QPduoKd1L._AC_SY200_.jpg" alt="">
+        <img src="asset\81F99hab1GL._AC_SY200_.jpg" alt="">
+        <img src="asset\71vYeYqdvUL._AC_SY200_.jpg" alt="">
+        <img src="asset\61h+qeD-qfL._AC_SY200_.jpg" alt="">
+        <img src="asset\51jd6JrnPrL._AC_SY200_.jpg" alt="">
+        <img src="asset\51IFiSD+kCL._AC_SY200_.jpg" alt="">
+        <img src="asset\61d46oYQgdL._AC_SY200_.jpg" alt="">
+        <img src="asset\71SEZvg1spL._AC_SY200_ (1).jpg" alt="">
+        <img src="asset\51wX5vhTB4L._AC_SY200_.jpg" alt="">
+    </div>
+    <ul class="tax">
+        <li><b class="de">Deals in PCs</b>
+            <img src="asset\Fuji_Desktop_Single_image_EBF_1x_v1._SY304_CB573698005_.jpg" alt="">
+            <a 
+                href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">See all deals</a>
+        </li>
+        <li><b class="de">Gamming accessoriese</b>
+            <div class="char">
+              <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg" alt=""><span>headsets</span></a> 
+              <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg" alt=""><span>keybord</span></a> 
+                <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">    <img src="asset\Fuji_Quad_Mouse_1x._SY116_CB667159063_.jpg" alt=""><span>Computer mice</span></a> 
+                    <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">   <img src="asset\Fuji_Quad_Chair_1x._SY116_CB667159060_.jpg" alt=""><span>Chairs</span></a> 
+            </div>
+            <a 
+                href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">Show
+                more</a></li>
+        <li><b class="de">Shop deals in Fashion</b>
+            <div class="char">
+              <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\DQC_APR_TBYB_W_BOTTOMS_1x._SY116_CB624172947_.jpg" alt=""><span>Jeans under $50</span></a> 
+              <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\DQC_APR_TBYB_W_TOPS_1x._SY116_CB623353881_.jpg" alt=""><span>Tops under $25</span></a> 
+                <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">    <img src="asset\DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg" alt=""><span>Dresses under $30</span></a> 
+                    <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">   <img src="asset\DQC_APR_TBYB_W_SHOES_1x._SY116_CB624172947_.jpg" alt=""><span>Shoes under $50</span></a> 
+            </div>
+            <a 
+                href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">See all deals
+                </a></li>
+                <li class="cut"><b class="de">Refresh your space</b>
+                    <div class="char">
+                      <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\DesktopQuadCat_186x116_LP-HP_B08MYX5Q2W_01.23._SY116_CB619238939_.jpg" alt=""><span>dining</span></a> 
+                      <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk"> <img src="asset\DesktopQuadCat_186x116_kitchen_B0126LMDFK_01.23._SY116_CB619238939_.jpg" alt=""><span>kitchen</span></a> 
+                        <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">    <img src="asset\DesktopQuadCat_186x116_home_B08RCCP3HV_01.23._SY116_CB619238939_.jpg" alt=""><span>home</span></a> 
+                            <a href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">   <img src="asset\DesktopQuadCat_186x116_health-beauty_B07662GN57_01.23._SY116_CB619238939_.jpg" alt=""><span>dining & beuty</span></a> 
+                    </div>
+                    <a 
+                        href="https://www.amazon.com/s?k=computers&rh=p_n_deal_type%3A23566065011&_encoding=UTF8&content-id=amzn1.sym.3b8e83c9-3c43-44b5-841c-814032918d4f&pd_rd_r=d5dfc324-950d-4e6d-b5bf-c603260b959c&pd_rd_w=UQwbW&pd_rd_wg=npmJC&pf_rd_p=3b8e83c9-3c43-44b5-841c-814032918d4f&pf_rd_r=AG3RCRAH7ZBMRDCPPAP6&ref=pd_hp_d_atf_unk">Show
+                        more</a></li>
+    </ul>
+    <div class="max">
+        <span>See persnlise recomendation</span>
+        <button>Sign in</button>
+        <span>new customer?<a href="https://www.amazon.com/">Start here</a></span>
+    </div>
+   <a class="kk"    href="http://127.0.0.1:3000/index.html"> 
+    <div class="nnd">
+        Back to top
+    </div></a>
+    <div class="grid">
+        <div class="foot"><b>Get to Know Us</b>
+            <ul><li><a href="http://127.0.0.1:3000/index.html">Sell products on Amazon</a></li>
+                <li><a href="http://127.0.0.1:3000/index.html">Sell products on Amazon</a></li>
+                <li><a href="http://127.0.0.1:3000/index.html">Sell products on Amazon</a></li>
+                <li><a href="http://127.0.0.1:3000/index.html">Sell products on Amazon</a></li>
+                <li><a href="http://127.0.0.1:3000/index.html">Sell products on Amazon</a></li>
+                <li><a href="http://127.0.0.1:3000/index.html">Sell products on Amazon</a></li> </ul></div>
+                <div class="foot"><b>Get to Know Us</b>
+                    <ul><li><a href="http://127.0.0.1:3000/index.html">Sell products on Amazon</a></li>
+                        <li><a href="http://127.0.0.1:3000/index.html">Sell products on Amazon</a></li>
+                        <li><a href="http://127.0.0.1:3000/index.html">Sell products on Amazon</a></li>
+                        <li><a href="http://127.0.0.1:3000/index.html">Sell products on Amazon</a></li>
+                        <li><a href="http://127.0.0.1:3000/index.html">Sell products on Amazon</a></li>
+                        <li><a href="http://127.0.0.1:3000/index.html">Sell products on Amazon</a></li> </ul></div>
+                        <div class="foot"><b>Get to Know Us</b>
+                            <ul><li><a href="http://127.0.0.1:3000/index.html">Sell products on Amazon</a></li>
+                                <li><a href="http://127.0.0.1:3000/index.html">Sell products on Amazon</a></li>
+                                <li><a href="http://127.0.0.1:3000/index.html">Sell products on Amazon</a></li>
+                                <li><a href="http://127.0.0.1:3000/index.html">Sell products on Amazon</a></li>
+                                <li><a href="http://127.0.0.1:3000/index.html">Sell products on Amazon</a></li>
+                                <li><a href="http://127.0.0.1:3000/index.html">Sell products on Amazon</a></li>
+                                <li><a href="http://127.0.0.1:3000/index.html">Sell products on Amazon</a></li>
+                                <li><a href="http://127.0.0.1:3000/index.html">Sell products on Amazon</a></li>
+                                <li><a href="http://127.0.0.1:3000/index.html">Sell products on Amazon</a></li> </ul></div>
+                                <div class="foot"><b>Get to Know Us</b>
+                                    <ul><li><a href="http://127.0.0.1:3000/index.html">Sell products on Amazon</a></li>
+                                        <li><a href="http://127.0.0.1:3000/index.html">Sell products on Amazon</a></li>
+                                        <li><a href="http://127.0.0.1:3000/index.html">Sell products on Amazon</a></li>
+                                        <li><a href="http://127.0.0.1:3000/index.html">Sell products on Amazon</a></li>
+                                        <li><a href="http://127.0.0.1:3000/index.html">Sell products on Amazon</a></li>
+                                        <li><a href="http://127.0.0.1:3000/index.html">Sell products on Amazon</a></li> </ul></div>
+    </div>
+    <div class="lele">
+        <a href="https://www.amazon.com/"> <img src="asset/amazon_logo.png" alt="ll"></a>
+      <div class="lang"> <select name="english" id="en"> 
+            <option value="english">English</option>
+            <option value="english">English</option>
+            <option value="english">English</option>
+            <option value="english">English</option>
+            <option value="english">English</option>
+        </select>
+
+    </div> 
+    <a class="mm" href="https://www.amazon.com/"><b>$</b>USD-U.S.Dollar</a>
+    <a class="mm" href="https://www.amazon.com/"><b>United States</b></a>
+    
+
+    </div>
+    <div class="lastgrid">
+         <ul><li><a href="https://www.amazon.com/"><b>
+            Amazon Music</b></a>
+        <a href="https://www.amazon.com/">Stream millions
+            of songs</a></li></ul>    
+         <ul><li><a href="https://www.amazon.com/"><b>
+            Amazon Music</b></a>
+        <a href="https://www.amazon.com/">Stream millions
+            of songs</a></li></ul>    
+         <ul><li><a href="https://www.amazon.com/"><b>
+            Amazon Music</b></a>
+        <a href="https://www.amazon.com/">Stream millions
+            of songs</a></li></ul>    
+         <ul><li><a href="https://www.amazon.com/"><b>
+            Amazon Music</b></a>
+        <a href="https://www.amazon.com/">Stream millions
+            of songs</a></li></ul>    
+         <ul><li><a href="https://www.amazon.com/"><b>
+            Amazon Music</b></a>
+        <a href="https://www.amazon.com/">Stream millions
+            of songs</a></li></ul>    
+         <ul><li><a href="https://www.amazon.com/"><b>
+            Amazon Music</b></a>
+        <a href="https://www.amazon.com/">Stream millions
+            of songs</a></li></ul>    
+         <ul><li><a href="https://www.amazon.com/"><b>
+            Amazon Music</b></a>
+        <a href="https://www.amazon.com/">Stream millions
+            of songs</a></li></ul>    
+         <ul><li><a href="https://www.amazon.com/"><b>
+            Amazon Music</b></a>
+        <a href="https://www.amazon.com/">Stream millions
+            of songs</a></li></ul>    
+         <ul><li><a href="https://www.amazon.com/"><b>
+            Amazon Music</b></a>
+        <a href="https://www.amazon.com/">Stream millions
+            of songs</a></li></ul>    
+         <ul><li><a href="https://www.amazon.com/"><b>
+            Amazon Music</b></a>
+        <a href="https://www.amazon.com/">Stream millions
+            of songs</a></li></ul>    
+         <ul><li><a href="https://www.amazon.com/"><b>
+            Amazon Music</b></a>
+        <a href="https://www.amazon.com/">Stream millions
+            of songs</a></li></ul>    
+         <ul><li><a href="https://www.amazon.com/"><b>
+            Amazon Music</b></a>
+        <a href="https://www.amazon.com/">Stream millions
+            of songs</a></li></ul>    
+         <ul><li><a href="https://www.amazon.com/"><b>
+            Amazon Music</b></a>
+        <a href="https://www.amazon.com/">Stream millions
+            of songs</a></li></ul>    
+         <ul><li><a href="https://www.amazon.com/"><b>
+            Amazon Music</b></a>
+        <a href="https://www.amazon.com/">Stream millions
+            of songs</a></li></ul>    
+         <ul><li><a href="https://www.amazon.com/"><b>
+            Amazon Music</b></a>
+        <a href="https://www.amazon.com/">Stream millions
+            of songs</a></li></ul>    
+         <ul><li><a href="https://www.amazon.com/"><b>
+            Amazon Music</b></a>
+        <a href="https://www.amazon.com/">Stream millions
+            of songs</a></li></ul>    
+         <ul><li><a href="https://www.amazon.com/"><b>
+            Amazon Music</b></a>
+        <a href="https://www.amazon.com/">Stream millions
+            of songs</a></li></ul>    
+         <ul><li><a href="https://www.amazon.com/"><b>
+            Amazon Music</b></a>
+        <a href="https://www.amazon.com/">Stream millions
+            of songs</a></li></ul>    
+         <ul><li><a href="https://www.amazon.com/"><b>
+            Amazon Music</b></a>
+        <a href="https://www.amazon.com/">Stream millions
+            of songs</a></li></ul>    
+         <ul><li><a href="https://www.amazon.com/"><b>
+            Amazon Music</b></a>
+        <a href="https://www.amazon.com/">Stream millions
+            of songs</a></li></ul>    
+         <ul><li><a href="https://www.amazon.com/"><b>
+            Amazon Music</b></a>
+        <a href="https://www.amazon.com/">Stream millions
+            of songs</a></li></ul>    
+         <ul><li><a href="https://www.amazon.com/"><b>
+            Amazon Music</b></a>
+        <a href="https://www.amazon.com/">Stream millions
+            of songs</a></li></ul>    
+         <ul><li><a href="https://www.amazon.com/"><b>
+            Amazon Music</b></a>
+        <a href="https://www.amazon.com/">Stream millions
+            of songs</a></li></ul>    
+         <ul><li><a href="https://www.amazon.com/"><b>
+            Amazon Music</b></a>
+        <a href="https://www.amazon.com/">Stream millions
+            of songs</a></li></ul>    
+         <ul><li><a href="https://www.amazon.com/"><b>
+            Amazon Music</b></a>
+        <a href="https://www.amazon.com/">Stream millions
+            of songs</a></li></ul>    
+         <ul><li><a href="https://www.amazon.com/"><b>
+            Amazon Music</b></a>
+        <a href="https://www.amazon.com/">Stream millions
+            of songs</a></li></ul>    
+         <ul><li><a href="https://www.amazon.com/"><b>
+            Amazon Music</b></a>
+        <a href="https://www.amazon.com/">Stream millions
+            of songs</a></li></ul>    
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css filter</title>
+    <style>
+        .container{
+
+        }
+        img{
+            /* filter: blur(100px); */
+        }
+/*         
+contrast
+अंतर difference in the background and the text  so that we can read text easily*/
+.img1{
+/* filter: brightness(302%); */
+filter: brightness(302%) contrast(10px);
+
+}
+.img2{
+    filter: invert(1);
+    /* //chanes black to white and white to black */
+    filter: drop-shadow(100px 100px 10px red);
+
+/* ChatGPT
+The drop-shadow() function in CSS applies a drop shadow effect to the element it is applied to. The function takes a shadow parameter similar to the box-shadow property. However, the drop-shadow() function is used with the filter property.
+
+Here's how you can apply a drop shadow effect with a 10-pixel offset:
+
+css
+Copy code
+.element {
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+}
+This example applies a drop shadow with a horizontal and vertical offset of 10 pixels, a blur radius of 10 pixels, and a black shadow color with 50% opacity. Adjust these values as needed to fit your design requirements.
+
+10px 10px: Horizontal and vertical offsets.
+10px: Blur radius.
+rgba(0, 0, 0, 0.5): Shadow color with opacity. */
+}
+.img3{
+    filter: grayscale(100%);
+    /* black and white */
+
+    /*  opacity means trancperency 
+    opacity =0 then transperent
+     opacity =1 then fool image*/
+
+     /* filter: opacity(50%); */
+}
+    </style>
+</head>
+<body>
+    <div class="containr">
+        <img src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?size=626&ext=jpg" alt="" class="img1">
+        <img src="https://c.ndtvimg.com/2023-09/154fgjlg_shah-rukh-khan-_625x300_23_September_23.jpg" alt="" class="img2">
+        <img src="https://images.hindustantimes.com/img/2022/11/12/550x309/akshay_kumar_1659860706633_1668255913307_1668255913307.jpg" alt="" class="img3">
+    </div>
+</body>
+</html>

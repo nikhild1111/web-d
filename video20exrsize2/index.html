@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exrsize-2</title>
+    <style>
+        div{
+            background-color: blue;
+            color: white;
+        }
+        /* psudeo selector */
+        /* p:first-child{ */
+            /* The p:first-child selector in CSS is a pseudo-class selector that targets the first <p> element that is a child of its parent. It applies styles only to the first <p> element within a parent container, regardless of whether other types of elements come before it. */
+            p:nth-child(2){
+            background-color: yellow;
+            color: red;
+        }
+        /* The p:nth-child(2) selector applies to the second child element of its parent, regardless of the type of element. So, if a <br> tag (or any other element) is the first child, the p:nth-child(2) selector will not apply to the second <p> element, because the <br> tag will be counted as the first child. */
+    </style>
+
+</head>
+<body>
+    <div>
+        <!-- <a href="aa">fff</a> -->
+         <br>
+        <p>i am 1 paragraph</p>
+        <p>i am 2 paragraph</p>
+        <p>i am 3 paragraph</p>
+        <p>i am 4 paragraph</p>
+        <p>i am 5 paragraph</p>
+        <p>shift+alt+down</p>
+    </div>
+    <div>
+        <!-- <h1> i am another div</h1> -->
+        <p>i am 1 paragraph</p>
+        <p>i am 2 paragraph</p>
+        <p>i am 3 paragraph</p>
+        <p>i am 4 paragraph</p>
+        <p>i am 5 paragraph</p>
+        <p>shift+alt+down</p>
+    </div>
+</body>
+</html>

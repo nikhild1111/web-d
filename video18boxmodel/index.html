@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS box model
+        
+    </title>
+    <style>
+        *{
+        margin:0;
+        padding:0;
+    }
+    .box{
+        background-color: blue;
+    }
+    .box1{
+        /* css box model looks at all the html element as box */
+        /* The CSS box model is a core concept in web design and layout. It describes the structure and layout of elements on a webpage, defining how elements are sized, padded, bordered, and spaced. Understanding the box model is essential for controlling the layout and design of web pages. */
+        color:yellow;
+        padding:10px;
+        /* that means margin is not calculet any were */
+/* Correct, the margin is not included in the calculation of the element's width or height, regardless of the box-sizing property value. Margins always add space around the outside of the element's border, creating separation between the element and its surrounding elements or container. Here's a more detailed  */
+        margin:35px;
+        border:2px solid black;
+
+/* If you do not use box-sizing: border-box, the default box model, content-box, will apply. In the content-box model, the width and height properties only include the content, not the padding or border. This can sometimes lead to unexpected layout results, especially when you add padding and borders to elements. */
+        height:200px;
+        box-sizing: border-box;
+        /* it means border height and width is considerd including the content + padding +border */
+        
+    }
+    /* margin collapase taks palce between two box so the box which have more margine are take between them 
+    the background color is not go to the margin 
+    more information is on code with harry.com */
+    .box2{
+        color:yellow;
+        padding:10px;
+        margin:50px;
+        /* Margin Calculation: Margins are calculated as the space outside the border, similar to content-box. The margin does not affect the width or height of the element. It creates space around the element, separate from the border-box dimensions */
+        border:2px solid black;
+        height:200px;
+        box-sizing: border-box;
+        /* The box-sizing property in CSS defines how the width and height of an element are calculated. The border-box value for the box-sizing property includes padding and border within the specified width and height of an element, which can simplify layout design and make it easier to control the size of elements. */
+        /* When you use box-sizing: border-box, the width and height properties include the padding and border, but not the margin. This means that the total width and height of the element are exactly what you set, making it easier to work with complex layouts. */
+    }
+    </style>
+</head>
+<body>
+    <div class="box box1">i am a box</div>
+    <div class="box box2">i am  another box </div>
+</body>
+</html>

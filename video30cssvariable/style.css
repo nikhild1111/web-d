@@ -1,0 +1,75 @@
+/* 
+
+In CSS, a variable (also known as a custom property) allows you to store a value that can be reused throughout your stylesheet. This helps maintain consistency and makes it easier to update values across your styles.
+
+Defining a CSS Variable
+CSS variables are defined within a CSS selector that defines its scope. They are prefixed with --:
+
+css
+Copy code
+:root {
+  --main-bg-color: #3498db;
+  --main-text-color: #ffffff;
+  --padding: 20px;
+}
+The :root pseudo-class is often used to define global variables because it represents the document's root element.
+
+Using a CSS Variable
+To use the value of a CSS variable, you use the var() function:
+
+css
+Copy code
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  padding: var(--padding);
+}
+Fallback Values
+You can specify a fallback value in the var() function to be used if the variable is not defined:
+
+css
+Copy code
+body {
+  background-color: var(--nonexistent-var, #ff0000); /* Fallback to red if --nonexistent-var is not defined */
+
+
+
+
+/* harryy code start */
+
+:root{
+    --color:red;
+    --sec:blue;
+    --defpad:23px;
+    --defop:0.4;
+    /* opacity 
+In CSS, the opacity property is used to set the transparency level of an element. It takes a value between 0 and 1, where 0 is completely transparent and 1 is completely opaque(Dense) */
+/* root is the global variable */
+
+ /* variabl can hold background url, number, string, img,px and any other value */
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+background-color: var(--color);
+}
+ul{
+    display: flex;
+}
+ul li{
+    opacity:var(--defop);
+    list-style: none;
+    padding: var(--defpad);
+    border: 2px solid var(--sec);
+}
+ul li:first-child{
+    --color:rgb(28, 7, 7);
+    /* here --color is local variable and the prefrence of local variable is more then global variable */
+    background-color: var(--color,yellow);
+    /* if color present it appres otherwise yellow is color */
+}
+.container{
+    background-color: var(--sec);
+}

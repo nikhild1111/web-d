@@ -1,0 +1,659 @@
+<!-- aline items is used when we have a single row  -->
+<!-- justify-content is used when we have multiple row -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex-3sol</title>
+    <style>
+        header{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .logo img {
+            width: 164px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: "Segoe UI";
+        }
+
+        .right ul {
+            display: flex;
+            gap: 34px;
+
+
+        }
+
+        .right ul li {
+            display: flex;
+            /* list-style: inside;not required */
+            list-style-type: none;
+            /* display: inline-block;not required */
+            align-items: center;
+            cursor: pointer;
+
+
+            /* gap: 34px; */
+            /* It seems there might be a misunderstanding regarding the use of the gap property in CSS. The gap property applies spacing between flex items, but it does not apply to the li elements directly. Instead, it applies to the space between the flex items within the flex container.
+
+In your provided code, the gap property is applied to the ul element, which is a flex container. Therefore, the spacing will be applied between the child elements of the ul, which are the li elements. */
+
+        }
+
+        .right ul span {
+            padding: 0 5px;
+        }
+
+        .my {
+            display: flex;
+            justify-items: center;
+
+        }
+
+        /* video 44 */
+
+
+
+        /* no any use     display: flex; */
+        /* border: 2px solid black; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* align-content: center; */
+        /* list-style: inside; */
+        /* list-style-type: none; */
+        /* gap: 10px; */
+        /* upto this */
+
+
+        /* .ok li a{
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        } */
+
+
+        .container {
+            display: grid;
+            grid-template-columns: 300px 300px 300px;
+            grid-template-rows: 150px 150px 150px 150px 150px;
+
+            justify-content: center;
+            row-gap: 30px;
+            column-gap: 50px;
+            display: flex;
+            flex-wrap: wrap;
+           
+
+        }
+
+        .a {
+            display: grid;
+            border: 2px solid silver;
+            grid-row: 1/2;
+            grid-column: 1/2;
+            /* align-items: center; */
+            background-color:gray;
+            border: none;
+        }
+
+        .a div:nth-child(1) {
+            display: grid;
+            justify-content: center;
+            font-size: 25px;
+            padding: 30px;
+        }
+       .ok li {
+
+            display: inline-block;
+
+        }
+
+        .ok li:first-child a {
+            background-color: blue;
+            text-decoration: none;
+            border-radius: 30px;
+            border: none;
+            margin: 5px;
+            padding: 5px;
+            color: black
+        }
+
+        .ok li:nth-child(2) a {
+            background-color: green;
+            text-decoration: none;
+            border-radius: 30px;
+            border: none;
+            margin: 5px;
+            padding: 5px;
+            color: black;
+        }
+
+        .b {
+            display: grid;
+            border: 2px solid silver;
+            grid-row: 1/2;
+            grid-column: 2/3;
+            background-color:gray;
+            border: none;
+
+        }
+        
+        .b div:nth-child(1) {
+            display: grid;
+            justify-content: center;
+            font-size: 25px;
+            padding: 30px;
+        }
+       .bb li {
+
+            display: inline-block;
+
+        }
+
+        .bb li:first-child a {
+            background-color: blue;
+            text-decoration: none;
+            border-radius: 30px;
+            border: none;
+            margin: 5px;
+            padding: 5px;
+            color: black
+        }
+
+        .bb li:nth-child(2) a {
+            background-color: green;
+            text-decoration: none;
+            border-radius: 30px;
+            border: none;
+            margin: 5px;
+            padding: 5px;
+            color: black;
+        }
+
+        .c {
+            display: grid;
+            border: 2px solid silver;
+            grid-row: 1/2;
+            grid-column: 3/4;
+            background-color:gray;
+            border: none;
+        }
+        
+        .c div:nth-child(1) {
+            display: grid;
+            justify-content: center;
+            font-size: 25px;
+            padding: 30px;
+        }
+       .cc li {
+
+            display: inline-block;
+
+        }
+
+        .cc li:first-child a {
+            background-color: blue;
+            text-decoration: none;
+            border-radius: 30px;
+            border: none;
+            margin: 5px;
+            padding: 5px;
+            color: black
+        }
+
+        .cc li:nth-child(2) a {
+            background-color: green;
+            text-decoration: none;
+            border-radius: 30px;
+            border: none;
+            margin: 5px;
+            padding: 5px;
+            color: black;
+        }
+
+        .d {
+            display: grid;
+            border: 2px solid silver;
+            grid-row: 2/3;
+            grid-column: 1/2;
+            background-color:gray;
+            border: none;
+        }
+
+        .d div:nth-child(1) {
+            display: grid;
+            justify-content: center;
+            font-size: 25px;
+            padding: 30px;
+        }
+       .dd li {
+
+            display: inline-block;
+
+        }
+
+        .dd li:first-child a {
+            background-color: blue;
+            text-decoration: none;
+            border-radius: 30px;
+            border: none;
+            margin: 5px;
+            padding: 5px;
+            color: black
+        }
+
+        .dd li:nth-child(2) a {
+            background-color: green;
+            text-decoration: none;
+            border-radius: 30px;
+            border: none;
+            margin: 5px;
+            padding: 5px;
+            color: black;
+        }
+        .e {
+            display: grid;
+            border: 2px solid silver;
+            grid-row: 2/3;
+            grid-column: 2/3;
+            background-color:gray;
+            border: none;
+           
+        }
+        
+        .e div:nth-child(1) {
+            display: grid;
+            justify-content: center;
+            font-size: 25px;
+            padding: 30px;
+        }
+       .ee li {
+
+            display: inline-block;
+
+        }
+
+        .ee li:first-child a {
+            background-color: blue;
+            text-decoration: none;
+            border-radius: 30px;
+            border: none;
+            margin: 5px;
+            padding: 5px;
+            color: black
+        }
+
+        .ee li:nth-child(2) a {
+            background-color: green;
+            text-decoration: none;
+            border-radius: 30px;
+            border: none;
+            margin: 5px;
+            padding: 5px;
+            color: black;
+        }
+
+        .f {
+            display: grid;
+            border: 2px solid silver;
+            grid-row: 2/3;
+            grid-column: 3/4;
+            background-color:gray;
+            border: none;
+        }
+        
+        .f div:nth-child(1) {
+            display: grid;
+            justify-content: center;
+            font-size: 25px;
+            padding: 30px;
+        }
+       .ff li {
+
+            display: inline-block;
+
+        }
+
+        .ff li:first-child a {
+            background-color: blue;
+            text-decoration: none;
+            border-radius: 30px;
+            border: none;
+            margin: 5px;
+            padding: 5px;
+            color: black
+        }
+
+        .ff li:nth-child(2) a {
+            background-color: green;
+            text-decoration: none;
+            border-radius: 30px;
+            border: none;
+            margin: 5px;
+            padding: 5px;
+            color: black;
+        }
+
+        .g {
+            display: grid;
+            border: 2px solid silver;
+            grid-row: 3/4;
+            grid-column: 1/2;
+            background-color:gray;
+            border: none;
+        }
+        
+        .g div:nth-child(1) {
+            display: grid;
+            justify-content: center;
+            font-size: 25px;
+            padding: 30px;
+           
+        }
+       .gg li {
+
+            display: inline-block;
+
+        }
+
+        .gg li:first-child a {
+            background-color: blue;
+            text-decoration: none;
+            border-radius: 30px;
+            border: none;
+            margin: 5px;
+            padding: 5px;
+            color: black
+        }
+
+        .gg li:nth-child(2) a {
+            background-color: green;
+            text-decoration: none;
+            border-radius: 30px;
+            border: none;
+            margin: 5px;
+            padding: 5px;
+            color: black;
+        }
+
+        .h {
+            display: grid;
+            border: 2px solid silver;
+            grid-row: 3/4;
+            grid-column: 2/3;
+            background-color:gray;
+            border: none;
+        }
+        
+        .h div:nth-child(1) {
+            display: grid;
+            justify-content: center;
+            font-size: 25px;
+            padding: 30px;
+            background-color:gray;
+            border: none;
+        }
+       .hh li {
+
+            display: inline-block;
+
+        }
+
+        .hh li:first-child a {
+            background-color: blue;
+            text-decoration: none;
+            border-radius: 30px;
+            border: none;
+            margin: 5px;
+            padding: 5px;
+            color: black
+        }
+
+        .hh li:nth-child(2) a {
+            background-color: green;
+            text-decoration: none;
+            border-radius: 30px;
+            border: none;
+            margin: 5px;
+            padding: 5px;
+            color: black;
+        }
+
+        .i {
+            display: grid;
+            border: 2px solid silver;
+            grid-row: 3/4;
+            grid-column: 3/4;
+            background-color:gray;
+            border: none;
+
+        }
+        
+        .i div:nth-child(1) {
+            display: grid;
+            justify-content: center;
+            font-size: 25px;
+            padding: 30px;
+        }
+       .ii li {
+
+            display: inline-block;
+
+        }
+
+        .ii li:first-child a {
+            background-color: blue;
+            text-decoration: none;
+            border-radius: 30px;
+            border: none;
+            margin: 5px;
+            padding: 5px;
+            color: black
+        }
+
+        .ii li:nth-child(2) a {
+            background-color: green;
+            text-decoration: none;
+            border-radius: 30px;
+            border: none;
+            margin: 5px;
+            padding: 5px;
+            color: black;
+        }
+
+        .j {
+            display: grid;
+            border: 2px solid silver;
+            grid-row: 4/5;
+            grid-column: 1/2;
+            background-color:gray;
+            border: none;
+        }
+        
+        .j div:nth-child(1) {
+            display: grid;
+            justify-content: center;
+            font-size: 25px;
+            padding: 30px;
+        }
+       .jj li {
+
+            display: inline-block;
+
+        }
+
+        .jj li:first-child a {
+            background-color: blue;
+            text-decoration: none;
+            border-radius: 30px;
+            border: none;
+            margin: 5px;
+            padding: 5px;
+            color: black
+        }
+
+        .jj li:nth-child(2) a {
+            background-color: green;
+            text-decoration: none;
+            border-radius: 30px;
+            border: none;
+            margin: 5px;
+            padding: 5px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" alt="ultra edit">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><span><a href="/">product</a> </span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><span><a href="/">pricing</a></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><span><a href="/">resources </a></span><svg width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><span><a href="/">anout us</a> </span><svg width="20" height="20" viewBox="0 0 24 24"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><span><a href="/"> security and compliance</a></span><svg width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9"
+                                stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><a href="/"><img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png"
+                                alt=""></a>
+            </div>
+            </li>
+            </ul>
+            </div>
+            <!-- <div>
+            <p>space arount means in div we retuen logo and in div we wright ul then they take same space arount it by obtening all the width if any new div come then they again arrenge width for alll and glive space to it </p>
+        </div> -->
+        </nav>
+    </header>
+    <main>
+        <!-- <div class="et_pb_module et_pb_text et_pb_text_19  et_pb_text_align_left et_pb_bg_layout_light"> -->
+        <div class="et_pb_text_inner">
+            <h3 class="my">Download UltraEdit&nbsp;<small>v2023.2(released 2023/12/15) | <a
+                        href="/updates/uehotfix/">Hotfix</a></small></h3>
+        </div>
+        </div>
+    </main>
+    <footer class="container">
+        <div class="a">
+            <div>English </div>
+            <!-- <div>english</div> -->
+
+            <ul class="ok">
+                <li> <a href="ue_english.exe">Dounload 32-bit</a></li>
+                <li><a href="ue_english.exe">Dounload 32-bit</a></li>
+
+            </ul>
+        </div>
+        <div class="b">
+            <div>deutsch</div>
+            <ul class="bb">
+                <li> <a href="ue_english.exe">Dounload 32-bit</a></li>
+                <li><a href="ue_english.exe">Dounload 32-bit</a></li>
+
+            </ul>
+        </div>
+        <div class="c">
+            <div>italiano </div>
+            <ul class="cc">
+                <li> <a href="ue_english.exe">Dounload 32-bit</a></li>
+                <li><a href="ue_english.exe">Dounload 32-bit</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="d">
+            <div>Espanol</div>
+            <ul class="dd">
+                <li> <a href="ue_english.exe">Dounload 32-bit</a></li>
+                <li><a href="ue_english.exe">Dounload 32-bit</a></li>
+
+            </ul>
+        </div>
+        <div class="e">
+            <div>French</div>
+            <ul class="ee">
+                <li> <a href="ue_english.exe">Dounload 32-bit</a></li>
+                <li><a href="ue_english.exe">Dounload 32-bit</a></li>
+
+            </ul>
+        </div>
+        <div class="f">
+            <div>Brazilian poruguese</div>
+            <ul class="ff">
+                <li> <a href="ue_english.exe">Dounload 32-bit</a></li>
+                <li><a href="ue_english.exe">Dounload 32-bit</a></li>
+
+            </ul>
+        </div>
+        <div class="g">
+            <div>Japan</div>
+            <ul class="gg">
+                <li> <a href="ue_english.exe">Dounload 32-bit</a></li>
+                <li><a href="ue_english.exe">Dounload 32-bit</a></li>
+
+            </ul>
+        </div>
+        <div class="h">
+            <div>English</div>
+            <ul class="hh">
+                <li> <a href="ue_english.exe">Dounload 32-bit</a></li>
+                <li><a href="ue_english.exe">Dounload 32-bit</a></li>
+
+            </ul>
+        </div>
+        <div class="i">
+            <div>chinese</div>
+            <ul class="ii">
+                <li> <a href="ue_english.exe">Dounload 32-bit</a></li>
+                <li><a href="ue_english.exe">Dounload 32-bit</a></li>
+
+            </ul>
+        </div>
+        <div class="j">
+            <div>Traditional</div>
+            <ul class="jj">
+                <li> <a href="ue_english.exe">Dounload 32-bit</a></li>
+                <li><a href="ue_english.exe">Dounload 32-bit</a></li>
+
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

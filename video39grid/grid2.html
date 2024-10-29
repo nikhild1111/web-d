@@ -1,0 +1,109 @@
+<!-- grid-2:in 2 we can place the item by giving the aram name -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .container {
+            width: 80vw;
+            height: 100vh;
+            border: 2px solid black;
+            display: grid;
+             /* grid-template-areas: "nav nav nav nav" */
+                          /* "side article article " */
+                        /* "footer footer footer";  
+                        /* The given grid-template-areas property defines a grid with inconsistent column counts in its rows, which is why it won't work. In CSS Grid Layout, each row in grid-template-areas must define the same number of columns. Let's break down the problem and how to fix it. */
+
+                        /* https://chatgpt.com/c/4997c851-1eac-4e20-bc91-e52ecf9a2f52 */
+                        grid-template-areas:"nav nav nav"
+                                          "side article article"
+                                          "footer footer footer";
+                                           
+                /* grid-template-columns: 1fr 1fr 1fr; */
+                /* fr is the unit by witch the whole width is divide into that fraction
+                 1fr 1fr 1fr  it means 1/3 1/3 1/3*/
+
+                 /* grid-template-columns: 1fr 2fr 1fr; */
+ 
+             /* grid-template-columns: repeat(4,1fr); */
+
+             /* grid-template-columns: repeat(4,minmax(100px,1fr)); */
+
+
+             /* grid-template-columns: repeat(4,80px); */
+             /* grid-template-rows: repeat(4,80px); */
+
+
+                 /* gap:34px; */
+                 /* it is use for set the gap between the items */
+                 /* use gap property in flex box and the grid dont use padding */
+
+                 /* row-gap: 15px; */
+                    /* column-gap: 34px; */
+          
+                    /* justify-items: center; */
+                    /* items horizontaly center */
+                       /* align-items: center; */
+                       /* items verticly center */
+           /* it will use within the cell */
+
+
+
+
+/*      
+            justify-content: center;
+            align-content: end;  */
+  /* if grid is small and container is greter then use aline content and justify content */
+ /* place-content: center; */
+ /* it is use for both aline and justify */
+
+
+
+        }
+
+        .item {
+            border: 2px solid red;
+            height: 55px;
+            width: 55px;
+           
+        }
+
+        .item1 {
+            /* grid-area: nav; */
+            /* justify-self: start; */
+            /* align-self: end; */
+           
+
+        }
+        .item2{
+            /* grid-area: side; */
+
+        }
+     .item3{
+           /* grid-area:article; */
+     }
+        .item4 {
+            /* grid-area: footer; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+    </div>
+</body>
+
+</html>

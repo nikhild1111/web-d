@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border-radius:50px;
+            position: absolute;
+            bottom: 0;
+            left: 0; 
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: nikhil 1s cubic-bezier(0, 1.02, 0.58, 1) 3s 1 forwards,
+            nikhil2 1s cubic-bezier(0, 1.02, 0.58, 1) 3s 1 forwards ,
+            nikhil3 3s cubic-bezier(0, 1.02, 0.58, 1) 4s 1 forwards,
+            nikhil4 3s cubic-bezier(0, 1.02, 0.58, 1) 4s 1 forwards,
+            nikhil5 5s cubic-bezier(0, 1.02, 0.58, 1) 6s 1 forwards,
+            nikhil6 5s cubic-bezier(0, 1.02, 0.58, 1) 6s 1 forwards ;
+        }
+        @keyframes nikhil{
+            from{
+              
+            }
+           to{
+            left: 10%;
+            transform: translateY(-200px);
+         
+           }
+        }
+       @keyframes nikhil2{
+            from{
+              
+            }
+           to{
+            /* left: 10%; */
+            transform: translatex(200px);
+           }
+            
+        }
+       @keyframes nikhil3{
+            from{
+              
+            }
+           to{
+            left: 20%;
+            transform: translateY(-400px);
+           }
+        }
+      @keyframes nikhil4{
+            from{
+              
+            }
+           to{
+            /* left: 20%; */
+            transform: translatex(400px);
+           } 
+            
+         }
+         @keyframes nikhil5{
+            from{
+              
+            }
+           to{
+            left: 30%;
+            transform: translateY(-600px);
+           }
+        }
+      @keyframes nikhil6{
+            from{
+              
+            }
+           to{
+            left: 30%;
+            transform: translatex(600px);
+           } 
+            
+         }
+
+        .container {
+            position: relative;
+            height: 80vh;
+            width: 80vw;
+            background-color: blue;
+        }
+ 
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box">
+        </div>
+    </div>
+    <!-- 
+   
+     -->
+</body>
+
+</html>

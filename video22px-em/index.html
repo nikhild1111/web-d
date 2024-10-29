@@ -1,0 +1,189 @@
+<!-- px=196*inch
+margin=auto;only for block element not for inline
+if we overwrite the size in  px then only change otherwise defult value can be given -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>px-em-rem-vmin-vmax</title>
+    <style>
+
+
+/* In web development and design, px, em, rem, vp, and vw are units of measurement used in CSS (Cascading Style Sheets) to define dimensions, spacing, and other properties */
+/* https://chatgpt.com/c/7b320504-d85c-4d64-a3df-4b29e288be14 */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 12px;
+        }
+        
+
+/* The box-sizing: border-box; CSS property changes the box model to make it easier to size elements. By default, the box-sizing property is set to content-box. Here's the difference between the two: */
+
+/* content-box (default): */
+
+/* The width and height properties include only the content. Padding, border, and margin are not included in the width and height calculations. */
+          
+/* Example:
+css
+Copy code
+.box {
+  width: 200px;
+  padding: 20px;
+  border: 10px solid black;
+  box-sizing: content-box;
+} */
+/* In this example, the actual rendered width of the box would be 200px (content) + 20px (left padding) + 20px (right padding) + 10px (left border) + 10px (right border) = 260px. */
+
+
+
+.box{
+box-sizing: border-box;
+            /* it means width and height include padding  and border */
+            border: 2px solid black;
+            /* width: 2048px; */
+            width:80vw;
+            /* width: 80vw;: This line sets the width of the element to 80% of the viewport width (vw).  */
+              /* it means width is 80 % of view port   */
+           
+            height: 10vh;
+            /* height: 10vh;: This line sets the height of the element to 10% of the viewport height (vh).   */
+
+         
+            margin:auto;
+            /* it is not usefull for inline element also no widh and height is set to inline element */
+            /* left and write margin auto set and div is at center */
+         background-color: red;
+        }
+        .my{ 
+            background-color: blue;
+            border: 2px solid black;
+            
+            
+            
+          /* all the below propery ids not usefull for inline element   */
+            margin:auto;
+         box-sizing: border-box;
+            width: 40px;
+            height: 200px;
+            /* not usefull for inline element */
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 2048px; */
+          
+          
+            /* width:80vw; */
+            /* height: 80vh; */
+          
+            /* Overflow Handling: If the content inside the element exceeds 80vh, the element will grow taller to accommodate the content. */
+            /* min-height: 80vh; */
+           /* minimum height is 80 and max is max
+           it means we can add more many leter and the size will increse for thet leter
+            same for the width */
+           
+            /* font-size: 18px; */
+              
+            
+            /* by default font size 16px */
+               
+            margin: 23px auto;
+ /* 23px is for up and bottom left and write margin auto set and div is at center */
+          
+/*           
+ Max-height:
+
+The max-height property sets the maximum height an element can grow to. If the content inside the element exceeds this height, the element will not grow beyond this limit, and depending on the overflow property, the content might be clipped or scrollable.
+Example Usage:
+
+css
+Copy code
+.container {
+  max-height: 80vh;
+  overflow-y: auto; /* This ensures the content is scrollable if it exceeds 80vh */
+/* } */
+ /* */ 
+
+            text-overflow: ellipsis;
+             overflow: hidden;
+            
+          
+           
+         background-color: red;
+        }
+        .container p{
+            font-size: 2em;
+            
+/* The CSS property font-size controls the size of text within an element on a web page. The value 2em is a relative unit of measurement that sets the font size to twice the size of the parent element's font size. */
+            /* border: 5px solid ; */
+            /* width: 50%; */
+            
+            /* font-size: 2rem; */
+            /* 2em  font size means inherited into 2px
+            em is for any element and rem for root(html) elment
+            all element inherits the property;
+            that means if we give html 12px then for all it is 12px
+            only if we can not change it inside element if we change it inside the 
+            class then class px will be applya becuse class have greter prefrence then universal  */
+        }
+
+    
+        /* .container p span{
+            border: 2px solid green;
+            width: 50%;
+            background-color:aqua;
+        }  span inline so not great result*/
+
+
+        /* .container p div{
+            border: 2px solid green;
+            width: 50%;
+            background-color:aqua;
+        }  we can not enter div inside para if we write div inside div then para then it is 50 of 50 of 50*/
+    
+        .mycontainer{
+        box-sizing: border-box;
+            border: 2px solid black;
+            width:80vw;
+            /* width:80vmin; */
+            /* vmin=vh if height is less and vmin=vw if width is less */
+           margin:23px auto;
+          color: yellow;
+         background-color: red;
+    }
+    </style>
+</head>
+<!-- The width: 80vmin; CSS rule sets the width of an element to 80% of the smaller dimension of the viewport, whether that is the viewport's width or height. The vmin unit stands for "viewport minimum," and it is calculated as follows:
+
+If the viewport's width is smaller than its height, 1vmin is equal to 1% of the viewport's width.
+If the viewport's height is smaller than its width, 1vmin is equal to 1% of the viewport's height.
+For example:
+
+If the viewport is 1000px wide and 800px tall, 1vmin is 8px (1% of 800px).
+If the viewport is 800px wide and 1000px tall, 1vmin is 8px (1% of 800px).
+Therefore, width: 80vmin; would set the width of the element to 80% of the viewport's smaller dimension. -->
+<body>
+     <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units -->
+    <div class="box"> This is box</div>
+    <div class="container">
+        <p>lorem500 dolor Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit rerum dolorum rem minima nam ducimus sapiente praesentium doloremque earum maiores excepturi, maxime quis quo necessitatibus est. Beatae maiores a accusamus nihil ducimus natus fuga doloribus, iste nulla quam sapiente quo consequuntur earum delectus illum similique rerum tempora. Natus aspernatur quasi modi quaerat ipsum. Sequi libero quos voluptate earum laborum sit? Beatae porro quasi enim similique omnis animi consequatur quas! Magnam illo voluptatibus veritatis vitae quisquam, maxime inventore mollitia exercitationem aperiam, praesentium amet saepe iste debitis nostrum. Repellendus harum nulla quia facilis error quasi repellat eligendi, similique ducimus itaque, ratione repudiandae vitae accusamus vel esse rerum officiis temporibus pariatur cum odit hic architecto voluptas nam? Sequi quasi magni numquam quis optio, quam necessitatibus facere ullam, eum dolore quo, iure fugiat iusto tempora nostrum eaque iste excepturi deleniti voluptatum dolor. Possimus deleniti laudantium maiores, modi quibusdam eius sint, ut temporibus praesentium velit animi iste. Velit iusto vitae laboriosam enim voluptatibus provident explicabo ab soluta quibusdam, incidunt doloremque est pariatur. Velit quod, eum illo autem eos sequi corporis nobis recusandae repellendus obcaecati sed pariatur harum molestiae amet architecto, vitae sunt temporibus minus omnis, cupiditate ea perferendis. Totam a, iure dicta ex deserunt, soluta corporis ut libero cum, doloribus voluptatem tenetur tempore. Nisi quaerat tenetur est necessitatibus error iusto quasi sint? Delectus cum consequatur nobis provident.
+           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui optio doloribus minus quisquam rerum pariatur odit obcaecati saepe voluptatum maiores, aliquam, dolores beatae aliquid fuga dolore modi non! Voluptas perferendis dolores nesciunt, animi eligendi fugiat voluptatum itaque officiis soluta. Necessitatibus quasi rerum repudiandae, deserunt aperiam esse in distinctio voluptate officiis id voluptas animi aliquam a?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero necessitatibus molestias doloribus a corrupti ducimus veniam, fuga adipisci voluptatum recusandae maxime harum tempore dolor nulla laborum assumenda totam, delectus nihil? Nesciunt nobis accusantium ratione atque consectetur, pariatur asperiores consequatur adipisci quod tenetur explicabo, amet error!</p>
+    </div>
+    <span class="my"> % means parents widths 50%
+        <!-- In HTML, the < and > characters are reserved for defining tags. Using them directly without escaping will be interpreted as HTML tags by the browser. This can lead to unintended behavior, as the browser will try to interpret the text between < and > as an HTML element.
+
+        Using &lt; and &gt; ensures that these characters are displayed as plain text rather than being interpreted as HTML tags. This is especially useful in the following scenarios: -->
+
+        here &lt;p&gt; s parent is &lt;div&gt; ||% does not apply any where
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         margin=auto does not apply on inline</span>
+
+     <div class="mycontainer"> I am another container</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!-- if we set width and height then we have to find asspect ratio so use this property -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object fit property    </title>
+
+    <style>
+        .container{
+            height: 488px;
+            width: 466px;
+            border: 2px solid black;
+            background-color: azure;
+            background-image: url("https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D");
+background-position: center center;
+ /* it display the center part of image without chenging asspect ratio      */
+
+
+ 
+/* background-image: url(data:image/jpeg;base64,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); */
+/* if background img is small then it is repeat in x and y we can set repetation */
+/* background-repeat: no-repeat; */
+/* background-repeat: repeat-x; */
+/* background-repeat: repeat-y; */
+
+/* background-clip: border-box;
+exploer it */
+}
+       
+        img{
+          
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+    </div>
+</body>
+</html>

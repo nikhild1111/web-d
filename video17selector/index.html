@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css selector</title>
+    <style>
+        /* Element selector */
+    div{
+    /* background-color: red; */
+
+   } 
+   /* class selector */
+   
+   .red{
+     /* background-color: red; */ 
+   }
+
+
+   /* id selector */
+    
+   #green{
+     /* background-color: blue; */ 
+   } 
+
+   /******may be wrong*** child selector:child directly present inside div no any tag inside them (directly first child then give it)
+   /////**right****In this setup, both <p> elements within the <div class="red" id="green"> are styled with aqua text color and brown background because they are direct children of the <div>. The <a> element does not affect this because it is also a direct child of the <div>, but it does not match the div > p selector, so it is not styled by this rule. */
+   div>p{
+     color: aqua;  
+      background-color: brown; 
+      /* Select and style every <p> element where the parent is a <div> element: */
+        /* The element>element selector is used to select elements with a specific parent.
+Note: Elements that are not directly a child of the specified parent, are not selected. */
+      }
+
+   /* The CSS selector div p {} is a descendant selector. It targets all <p> (paragraph) elements that are descendants of <div> elements. This means that any <p> element inside a <div> element, regardless of its depth, will be styled according to the rules defined within the curly braces {}. */
+   /* Desendant Selector:no any requrement if the div contain p then apply */
+   div p{
+      /* color:blue;  
+       background-color: brown;  */
+   }
+
+   /* Select and style the first <p> element that are placed immediately after <div> elements: */
+
+div + p {
+  /* background-color: yellow; */
+}
+
+
+
+   /* universal selector:it is applyed on all */
+    *{
+    margin:0;
+    padding:0;
+   }
+
+   /* pseudo selector:we can use it usibg the keyword */
+   a:visited{
+    color:yellow;
+   }
+   /* :link targets links that have not been visited by the user, while :visited targets links that have been visited. */
+
+   a:link{
+    color:green;
+   } 
+
+   /* This pseudo-class is used to apply styles to an element when it is being activated by the user, typically when clicking on it. */
+   /* a:active{
+    background-color:red;
+   } */
+
+   /* This pseudo-class is used to apply styles to an element when the user hovers over it with the mouse cursor. */
+   /* a:hover{
+    background-color: yellow;
+   }
+*/
+   p:first-child{
+    /* The p:first-child selector applies to a <p> element only if it is the very first child of its parent element. If any other element, including a <br> tag or any other tag, comes before the <p>, then the p:first-child rule will not apply to that <p>. */
+    color: blue;
+     background-color: rgb(15, 4, 4); 
+   } 
+
+
+   /* apply the padding 3px property on the immgete child of a1 */
+   /* .a1 > *{
+padding-top: 3px;
+} */
+    </style> 
+</head>
+<body>
+    <main class="one">
+      <p>i am s</p>
+      <ol>
+        <li>CSS selectors allow us to choose specific elements and apply styles to them. Suppose we want to add a custom style to only a specific tag(s). There, We can make use of CSS selector. 
+
+          There are different types of CSS selectors, which are as follows:
+          
+          Universal Selector
+          Element Selector
+          Id Selector
+          Class Selector
+          Group Selector
+          Let's look into these selectors one by one</li>
+      </ol>
+        <p>Pseudo-selectors are powerful tools in CSS, allowing developers to apply styles based on various criteria various conditions and states of HTML elements beyond simple element types or class/ID attributes.   .
+          
+ also known as a pseudo-class or pseudo-element, is a keyword added to a selector that specifies a special state of the selected element(s).
+element. 
+Pseudo-elements: Pseudo-elements, on the other hand, target specific parts of an element's content rather than the element itself.
+Common pseudo-elements include ::before, ::after, ::first-line, and ::first-letter
+Pseudo-classes: Pseudo-classes target elements based on user interaction, such as whether an element is being hovered over, clicked, or focused. Some common pseudo-classes include :hover, :active, :focus, :first-child, :last-child, and :nth-child().
+        </p>
+        <p>i am second child my color does not change</p>
+    </main>
+    <div class="red">
+      <a href="">aaaa</a>
+      <p>first child of the div</p>
+        I am a div
+        <article>
+            <p>
+              The ar tag is one of the semantic HTML5 elements introduced to provide more meaning and structure to web documents. It is used to define a self-contained piece of content within a document, such as a blog post, a news article, a forum post, or a comment.</p>
+        </article>
+       </div> 
+        <div class="red" id="green">
+            <p> it will also color through id </p>
+         <a href="my"><p> it will also color through id </p></a>
+         <p> it will also color through id </p>
+        </div>
+        <p>nnn</p>
+        <a href="https://www.google.com">Go To Google</a>
+        <a href="https://www.google2.com">Go To Google2</a>
+        <p>nnn</p>
+</body>
+</html>

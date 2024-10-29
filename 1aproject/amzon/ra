@@ -1,0 +1,20 @@
+
+
+
+
+
+
+
+    font-size: 12px;
+    font-weight: 400;
+    display: inline-block;
+    position: absolute;
+    bottom: 35px;
+
+    box-sizing: border-box;
+    width: 481px;
+    height: 41px;
+    position: relative;
+    background-color: rgb(238, 233, 233);
+    top: 5px;
+    border-radius: 5px;

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow property</title>
+    <style>
+        /* div{
+            border: 2px solid red;
+            height: 149px;
+            width: 500px;
+        } */
+        div {
+            /* The overflow property in CSS is used to control what happens to content that is too big to fit into an element's box. It can be used to manage overflow in both the horizontal and vertical dimensions. */
+            /* visible: This is the default value. The overflow is not clipped. The content renders outside the element's box.
+
+css
+Copy code
+div {
+  overflow: visible;
+} */
+          
+          
+          
+          
+            width: 342px;
+            height:60px;
+            border: 2px solid black;
+            /* overflow: scroll; */
+             /* it always show scroll bar even the tex is not overflow */
+         
+         
+             /* overflow:auto; */
+             /* depent on horizontal and vertacal tex it arenge scroll if tex overflow then it arreng the scroll otherwise not  */
+         
+             /********************************************/
+             /* text-overflow: type; it specifies which type of overflow type you want to add ellips... or clip direct hidden */
+               /* overflow:type; it is for which you want like scolling hidden and many more  */
+
+
+
+          /* overflow:clip; */
+      /* programatical scroling not present in clip it derect hidden tex*/ 
+           
+             white-space: nowrap;
+          /*no tex in height only horizontal tex */
+        
+          /* text-overflow: ellipsis; */
+          /* overflow: scroll;  */
+          /* show .... if the horizontal tex overflow  */
+        
+             /* overflow-x : hidden; 
+         overflow-y: scroll;   */
+        /* we can select horizontal and vertical scroll hedden and scroll */
+
+     /* text-overflow:clip;  */
+     overflow: scroll; 
+/* show clip if the horizontal tex overflow  */
+         /* overflow: hidden auto; */
+          /* use horizontal(x),tnen vertical (y) together  */
+        
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem lorem444ipsum dolor, sit amet consectetur adipisicing elit. Recusandae impedit provident minus. Aperiam sunt rerum commodi nobis similique? Magni tenetur quas accusantium sed doloribus ipsam, areiciendis voluptatibus, dignissimos molestias dolor libero perferendis exercitationem voluptates expedita, debitis nam quae similique suscipit laboriosam maiores et? Corrupti architecto quibusdam aliquam voluptatibus odit eius natus eaque saepe aspernatur, numquam molestiae soluta id illo porro voluptate blanditiis fuga neque in, obcaecati exercitationem at. Vitae eius porro cum, corrupti cumque ipsam doloribus ratione deleniti repellendus necessitatibus explicabo illum. Quod, eveniet quaerat voluptate deleniti quidem rerum autem hic necessitatibus voluptatum soluta, est odit quis culpa iure optio!
+    </div>
+    
+</body>
+ </html>
+ <!--The overflow property in CSS is used to control what happens to content that is too big to fit into an element's box. It can be used to manage overflow in both the horizontal and vertical dimensions.
+
+Here are the common values for the overflow property:
+
+visible: This is the default value. The overflow is not clipped. The content renders outside the element's box.
+
+css
+Copy code
+div {
+  overflow: visible;
+}
+hidden: The overflow is clipped, and the rest of the content will be invisible.
+
+css
+Copy code
+div {
+  overflow: hidden;
+}
+scroll: The overflow is clipped, but a scrollbar is added to see the rest of the content.
+
+css
+Copy code
+div {
+  overflow: scroll;
+}
+auto: Similar to scroll, but it only adds scrollbars when necessary.
+
+css
+Copy code
+div {
+  overflow: auto;
+}
+inherit: The overflow property is inherited from its parent element.
+
+css
+Copy code
+div {
+  overflow: inherit;
+}
+There are also shorthand properties for controlling overflow in specific directions:
+
+overflow-x: Controls the overflow behavior in the horizontal (left/right) direction.
+
+css
+Copy code
+div {
+  overflow-x: auto;
+}
+overflow-y: Controls the overflow behavior in the vertical (top/bottom) direction.
+
+css
+Copy code
+div {
+  overflow-y: scroll;
+} -->

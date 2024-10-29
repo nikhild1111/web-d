@@ -1,0 +1,228 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar with background image */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('https://shaastramag.iitm.ac.in/sites/default/files/2022-08/Agriculture_0.jpg');
+  background-size: cover;
+  color: white;
+  height: 80px;
+  padding: 10px 20px;
+  position: relative;
+}
+
+/* Navbar Left Section */
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left .logo {
+  margin-right: 40px;
+  font-size: 24px;
+}
+
+.nav-left a {
+  color: #d92323;
+  text-decoration: none;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+/* Navbar Right Section */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Search Bar and Icon */
+.search-bar {
+  width: 300px;
+  padding: 8px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+}
+
+.search-icon {
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.register-btn{
+  margin: 5px;
+}
+/* Buttons (Login, Register, Cart) */
+.login-btn, .register-btn, .cart-btn {
+  background-color: #27c92d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-left: 10px;
+}
+
+.login-btn i, .cart-btn i {
+  margin-right: 8px;
+}
+
+.login-btn:hover, .register-btn:hover, .cart-btn:hover {
+  background-color: #45a049;
+}
+
+/* Cart Button to the Right */
+.cart-btn {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Horizontal Image Scroll Section */
+.image-scroll {
+  padding: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+  border-bottom: 2px solid #ddd;
+  height: 300px; /* Increased height for scroll bar */
+}
+
+.scroll-container {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Added space between images */
+}
+
+.image-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scroll-container img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+}
+
+/* Image Item Details */
+.image-item p {
+  margin: 8px 0;
+  text-align: center;
+}
+
+.add-to-cart-btn {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 10px;
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #e64a19;
+}
+
+/* Product Row Styles */
+.product-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.product-item {
+  text-align: center;
+  margin: 10px;
+  width: 18%; /* Adjusted for 5 items per row */
+}
+
+.product-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-item p {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.availability {
+  font-size: 14px;
+  color: #ff5722; /* Highlight stock availability */
+  margin-top: 8px;
+}
+
+.add-to-cart-btn {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 10px;
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #e64a19;
+}
+
+/* City and Farmer Section */
+.city-farmer-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.city-farmer-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.city-farmer-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.city-farmer-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+.city-farmer-item a {
+  color: #ff5722;
+  text-decoration: none;
+}
+
+.city-farmer-item a:hover {
+  text-decoration: underline;
+}

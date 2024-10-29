@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exrsize-3 solution</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins:wght@300&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: gray;
+        padding: 45px;
+        display: flex;
+    }
+
+    .card {
+        background-color: white;
+        width: 198px;
+     border-radius: 7px;
+        padding: 0 0 34px 0;
+        /*left right up down*/
+        margin: 4px;
+    }
+
+    .image {
+        padding: 3px;
+        /* border-radius: 10px; */
+    }
+
+    .image img {
+        border-radius: 10px;
+    }
+
+    .content {
+        padding: 7px 13px;
+        /*left and right=13 /up and doun=7*/
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .content p {
+        font-size: 9px;
+        color: gray;
+    }
+
+    .capsules {
+        padding: 0 28px 0px 14px;
+        /*up left down right*/
+    }
+
+    .capsules span {
+        border: 1px solid rgb(119, 111, 111);
+        padding: 0px 6px;
+        border-radius: 7px;
+        font-size: 8px;
+        font-family: 'Baloo Bhai 2', sans-serif;
+    }
+
+    .button {
+        text-align: center;
+
+    }
+
+    .button  button{
+        padding: 7px 15px;
+        border-radius: 15px;
+        background-color: rgb(216, 236, 253);
+        color: rgb(14, 150, 234);
+        font-size: 10px;
+        margin-top: 7px;
+        border: none;
+        
+/* The black border around the button might be coming from the default styling applied by the browser. To remove it, you can explicitly set the border to none in your CSS for the button element. Here's how you can modify your CSS: */
+        font-weight: bold;
+        cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAC4nV3QAAAACElEQVR42mL8//8/w5S6dAAAAABJRU5ErkJggg==), pointer;
+         /* Data URL Image Content: The Data URL you've provided is a long string representing an encoded image. If this image isn't an emoji or isn't properly formatted, it won't display as you expect.
+
+Cursor Format and Size: The cursor image must be a specific size (typically 16x16 or 32x32 pixels) to display correctly. If the image is too large or too small, it may not render correctly.
+
+Browser Support: Different browsers have varying levels of support for custom cursors, especially when using Data URLs. Ensure that the browser you are testing supports this feature. */
+    }
+
+    .button button:hover {
+        background-color: rgb(194, 225, 246);
+        color: rgb(10, 136, 214); 
+    }
+</style>
+
+<body>
+    <div class="card">
+        <div class="image">
+            <img width="188" class="image"
+                src="https://i.pinimg.com/1200x/1d/26/f6/1d26f61416f73dfdd2488727edf95683.jpg" alt="nature image">
+
+        </div>
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <div class="content">
+            <h2>Herry</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum non ut, eius possimus consequatur
+                laudantium praesentium earum dolorem, vitae facere officia hic odit harum? Quas, ratione molestiae
+                aspernatur dolorem iure tempore distinctio ex ut reprehenderit, perferendis et quis, aliquam facilis?
+                Saepe asperiores ipsa sint consequuntur!</p>
+        </div>
+        <div class="button">
+            <button>Read More</button>
+        </div>
+    </div>
+</body>
+
+</html>

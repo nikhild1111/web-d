@@ -1,0 +1,104 @@
+<!-- css ke through element ko dynamicaly insert karana before -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selector</title>
+    <style>
+       /* .box:first-child{
+        background-color: blanchedalmond;
+       }
+ 
+       .box::first-line{
+        color: yellow;
+       } */
+
+      
+       /* specificty of class and pseudo is greter then .boxes *{} */
+       /* .boxes {
+        color:blue;
+        border: 2px solid black;
+       } */
+/* 
+       .boxes *{
+        color:blue;
+        border: 2px solid black;
+       } */
+
+       /* .boxes *:
+The selector .boxes * targets all elements that are descendants of any element with the class boxes. The * is a universal selector that matches any element.
+color: blue;:
+
+This sets the text color of all descendant elements of .boxes to blue.
+border: 2px solid black;:
+
+This applies a 2-pixel solid black border around all descendant elements of .boxes. */
+
+
+
+
+
+       /* group selector */
+       /* p,a,.box,[data-color="primary"]{
+        padding-top: 45px;
+       } */
+
+       /* .box:nth-child(odd){
+        background-color: blue;
+       } */
+
+       /* .box:nth-child(even){
+        background-color: blue;
+       } */
+
+       /* .box:nth-last-child(3){
+        background-color: rgb(163, 8, 8);
+       } */
+/* it count the element of the parent from last and apply stayle on the element specifys here  */
+
+
+       /* .boxes::before{
+        content: "today is my last day";
+        color: blue;
+       } */
+
+       /* .boxes::after{
+        content: "today is my last day";
+        color: blue;
+       } */
+
+
+
+       /* The ::selection pseudo-element allows you to apply styles to the portion of an element that is selected by the user.  */
+       /* ::selection{
+        background-color: black;
+        color: aquamarine; */
+        /* when we select it will apply */
+        /* By using ::selection, you can provide a more visually appealing experience for users when they highlight text on your webpage. */
+       /* } */
+
+       .box::first-letter{
+        color: aqua;
+        font-size: 45px;
+       }
+       input::placeholder{
+        color: rgb(8, 143, 8);
+       }
+        .aa{
+            margin: 5px;
+            padding: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">i am first box Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias necessitatibus minima neque saepe voluptas ipsum quis doloribus fugiat, mollitia eius provident. Quibusdam, cumque? Amet nesciunt quod reiciendis minima necessitatibus labore sequi esse tempore delectus odit nemo temporibus deleniti dolore optio itaque nostrum quisquam modi pariatur numquam, suscipit incidunt sit fuga earum aperiam? Harum ducimus adipisci incidunt?</div>
+        <div class="box">hey i am Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi molestiae necessitatibus sapiente voluptatibus. Beatae unde similique quibusdam quos molestias, numquam nihil tempora qui accusamus fugiat, perspiciatis atque ad odit expedita voluptas odio minima ratione blanditiis enim autem vel quia repellat dignissimos. Quo optio nostrum repellat magni dolore, officiis et omnis, iusto veritatis ipsam architecto incidunt sequi? box</div>
+        <div class="box aa" >iiiiii<div>iiii</div></div>
+      <input type="text" placeholder="type your name here">
+        <p> since we can add div inside p but it not recomended it may not produse a disired layout and cusce issue in html page p is mostly use to add image video and audio also span amd other inline element</p>
+    </div>
+        
+    </body>
+</html>

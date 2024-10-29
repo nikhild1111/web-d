@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>front information</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">    -->
+   
+   
+<!--    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Poppins:ital,wght@0,200;1,100&display=swap" rel="stylesheet"> -->
+   
+   
+   
+   
+   <style>
+    body{
+        /* background-image: url(kk.jpg); */
+    /* background-position: left top; */
+    /* background-attachment: scroll(); */
+    /* background-attachment: fixed; */
+    background: red url(kk.jpg) no-repeat fixed right top;
+    }
+        /* for single font :-@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap'); */
+        /* if we want to add more font then add all derectly only ones  */
+       
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Poppins:ital,wght@0,200;1,100&display=swap');
+
+        h1{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        /* it indicats that we are using the font for the content present inside the h1 tag in case if browser does not have first font it goes to secongd then third and so on  */
+        
+        }
+        p{
+            /* font-family: 'Baloo 2', sans-serif;
+            font-family: 'Poppins', sans-serif;//****"double quotes are used to specifiy your choice"
+            font-size: 20px;
+            /* if we not give font size then by default broweser fix font size */
+            /* line-height: 4; */
+           /* letter-spacing: 2px;   */
+
+/* font-variant: inherit; */
+            /* font-family: 'Baloo 2', sans-serif; */
+            font-style: italic;
+            font-weight: 500;
+            /* bold and will tex */
+           
+            text-decoration: overline red;
+       
+/*     
+text-decoration: dashed;       
+The text-decoration property in CSS is used to specify the decoration applied to text, such as underlines, overlines, and line-throughs. However, as of the current CSS standards and browser support, text-decoration: dashed; is not a valid value.
+
+Common Values for text-decoration
+The text-decoration property typically supports the following values:
+
+none: No decoration applied to the text (removes any decoration).
+underline: Adds an underline below the text.
+overline: Adds a line above the text.
+line-through: Adds a line through the text.
+blink:   text-decoration: blink red; Causes the text to blink (this value is deprecated and not supported in modern browsers). text-decoration: dashed;
+            */
+    
+          
+        }
+        h2{
+            text-align: center;
+            text-transform: uppercase;
+           /* lowercase,capitlize */
+           text-decoration: underline;
+           text-decoration-color:green;
+        
+            /*    text-decoration: dashed; is not a valid CSS property value. */
+/* To achieve dashed underlines, use text-decoration-style: dashed in combination with text-decoration: underline and text-decoration-color to control the appearance of text decoration. */
+           text-decoration-style: dotted;
+           text-decoration-thickness:4px ;
+            text-indent: 45px; 
+            /* space from start line */
+            /* The text-indent property in CSS is used to control the indentation of the first line of text within an element. This property is commonly used to create visual separation at the beginning of paragraphs or blocks of text, making content more readable and aesthetically pleasing. */
+        }
+        .lorem{
+          border:2px solid red;
+          width:45px;
+          /* word-break: break-all; */
+          /* aquire the space in block by breckin the word */
+         
+          text-overflow: ellipsis;
+          overflow:hidden; 
+
+/* An ellipsis is a series of three dots (...) used to indicate that text has been truncated, meaning that part of the text is not being displayed because it exceeds the available space. */
+        }
+
+        /* The font-family property in CSS is used to specify the typeface for text content. It can list multiple fonts and include a generic family name as a fallback. If the first font isn't available, the browser will try the next one in the list, and so on. */
+
+        /* Generic families are broad categories of font types that serve as a fallback if the specified fonts are not available. These are: */
+    </style>
+</head>
+<body>
+     <!-- https://codepen.io/web-dot-dev/pen/yLojraG -->
+    <div>
+    <h1>Font</h1>
+    <h2>about Font </h2>
+    <p>This Is Video On Font</p>
+    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque velit aliquid itaque magnam vel dicta doloribus obcaecati fuga, ad optio laborum, mollitia et earum! Velit, aut odit mollitia similique dolorum nesciunt ea optio dolorem voluptatibus accusantium fugiat quidem quia consequatur cumque culpa id quo? Magni.</p>
+</div>
+</body>
+</html>

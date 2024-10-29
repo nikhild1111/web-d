@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Input</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Attendance Input</h2>
+    <div id="attendanceForm">
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" placeholder="Enter student name">
+        <button onclick="markAttendance()">Mark Attendance</button>
+    </div>
+    <div id="attendanceList">
+        <h3>Attendance List</h3>
+        <ul id="attendanceItems">
+            <!-- Attendance items will be dynamically added here -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+  //  return songs;
+
+
+//   let songs = await getsongs();
+// console.log(songs);
+
+//not use 
+// var audio = new Audio(songs[0]);
+// audio.play();//when user intract with play then only musiv=c other wise no
+//not use 
+
+
+// let cuurentsong=new Audio();
+ // cuurentsong.src="/songs/"+track;
+  // cuurentsong.play();

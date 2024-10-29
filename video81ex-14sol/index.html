@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex-14sol</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Noto+Sans:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&family=Poppins:wght@300;400;700&display=swap');
+
+        body {
+            background-color: green;
+            color: white;
+            font-family: 'Martel Sans', sans-serif;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+      <div>Initialise Hacking...</div>
+      <script>
+        const additem = async (item)=>{
+              await randomdelay();
+              let div = document.createElement("div");
+              div.innerHTML=item;
+              document.body.append(div);
+        }
+        const randomdelay = ()=>{
+            return new Promise((resolve,reject)=>{
+                timeout = 1 + 6*Math.random();
+                setTimeout(()=>{
+                    resolve()
+
+                },timeout*1000);
+            })
+        }
+        async function main(){
+            let t = setInterval(() => {
+                let last = document.body.getElementsByTagName("div");
+                last = last[last.length - 1]
+                if(last.innerHTML.endsWith("...")){
+                    last.innerHTML = last.innerHTML.slice(0, last.innerHTML.length-3)
+                }
+                else{
+
+                    last.innerHTML = last.innerHTML + "."
+                }
+
+            }, 100);
+            
+//  Here, last.length gives the number of <div> elements in the HTMLCollection. Subtracting 1 from last.length gives the index of the last element because array indices are zero-based.
+// For example, if there are 2 <div> elements:
+// last.length is 2.
+// last.length - 1 is 1.
+// last[1] accesses the second <div> element (because indices start at 0).
+           
+        let text=["Initialized Hacking now reading your data",
+                "Reading your Files",
+                "Password files Detected",
+                "Sending all passwords and personal files to server",
+                "Cleaning up"]
+                for(const item of text){
+                    await additem(item);
+                }
+                await randomdelay();
+                clearInterval(t);
+            }
+            main()
+      </script>
+</body>
+</html>

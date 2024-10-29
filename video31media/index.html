@@ -1,0 +1,109 @@
+<!-- media-quire are use to make the webside responsive -->
+<!-- portrait:-height is greter then width -->
+<!-- landscape:-width is greter then height -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css media query</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        /* css2 media if access in any other divise then style change rull
+        in css3 it is media query */
+
+        /* media quiry is use to make website responsive */
+
+
+        /* landscpe =width is greter then height
+         portrait=height is greter then width */
+
+        @media screen and (orientation:landscape){
+    body{
+                border: 2px solid rgb(8, 0, 8);
+            }
+}
+/* Media queries are useful for creating responsive designs that adapt to different screen sizes and orientations. */
+
+@media only screen and  (max-width:455px){
+    body{
+        background-color: blue;
+
+    }
+    .boxes{
+        flex-direction: column;
+    }
+}
+
+
+ /* only screen:-it means agar screen he to condition apply karo */
+ /* media type=all,print,screen,speech divice */ 
+
+ /* @media not|only mediatype and (expressions) {
+            CSS-Code;
+        } */
+
+        /* not
+        The not keyword negates a media query. It applies styles to devices that do not match the specified media query condition. */
+     
+     
+        /* only
+        The only keyword ensures that the media query applies only to devices that match the specified condition, and it helps avoid styles from being applied to older browsers that do not support media queries. */
+        /* Apply styles only to devices with a screen and a width of at least 600px: */
+        .boxes{
+            display:flex;
+            /* inline ho jayege */
+        }
+        .box{
+            width: 344px;
+            height: 344px;
+            background-color: slateblue;
+            padding: 3px;
+            margin: 3px;
+        }
+
+
+        /* and
+The and keyword is used to combine multiple conditions within a media query. It ensures that all conditions must be met for the styles to apply.
+
+Syntax:
+
+css
+Copy code
+@media media-type and (condition1) and (condition2) {
+    /* CSS rules */
+/* }
+Example:
+
+Apply styles to devices that have a screen width between 600px and 1200px:
+
+css
+Copy code*/
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+    body {
+        background-color: lightgreen;
+    }
+}  
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        Hey I Am A good boy
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>

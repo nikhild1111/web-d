@@ -1,0 +1,200 @@
+
+.logo img {
+    width: 164px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Segoe UI";
+}
+
+.right ul {
+    display: flex;
+    gap: 34px;
+
+
+}
+
+.right ul li {
+    display: flex;
+    /* list-style: inside;not required */
+    list-style-type: none;
+    /* display: inline-block;not required */
+    align-items: center;
+    cursor: pointer;
+
+
+    /* gap: 34px; */
+    /* It seems there might be a misunderstanding regarding the use of the gap property in CSS. The gap property applies spacing between flex items, but it does not apply to the li elements directly. Instead, it applies to the space between the flex items within the flex container.
+
+In your provided code, the gap property is applied to the ul element, which is a flex container. Therefore, the spacing will be applied between the child elements of the ul, which are the li elements. */
+
+}
+
+.right ul span {
+    padding: 0 5px;
+}
+
+.first span h1 {
+    display: flex;
+    /* flex-direction: column; */
+    /* margin:60px; */
+    /* padding: 45px; */
+    color: #222222;
+    /* width: 585px; */
+    font-family: 'Segoe UI';
+    font-weight: 450;
+
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    /* word-wrap: break-word; */
+    flex-wrap: wrap;
+    line-height: 1em;
+}
+
+@media (min-width: 767px) {
+    .first span h1 {
+        font-size: 40px;
+        margin: 60px;
+    }
+}
+
+.first p {
+
+    display: flex;
+    /* align-items: center; */
+    margin: 20px;
+    font-family: 'Segoe UI';
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 20px;
+
+
+}
+
+@media only screen and (min-width:793px) {
+    .first p {
+
+        font-size: 22px;
+        width: 64vw;
+        margin: auto 15vw;
+    }
+
+}
+
+.do button{
+    display: flex;
+    display: inline-block;
+    /* position: relative; */
+    padding: 12px 20px !important;
+    min-height: 48px;
+    min-width: 256px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    background-color: #00b6d1;
+    border: none;
+    cursor: pointer;
+}
+
+.do {
+
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.do a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.second { 
+position: relative;
+left: 6vw;
+margin: 70px 0;
+}
+@media only screen and (min-width:793px) {
+.second { 
+position: relative;
+left: 15vw;
+margin: 70px 0;
+}
+}
+.download span:nth-child(2){
+    display: flex;
+    position: relative;
+    display: inline-block;
+           font-size: 24px;
+   box-sizing: border-box;
+   padding: 5px;
+   bottom: 20px;
+   left: 10px;
+   font-family: 'Segoe UI';
+   font-weight: 400;
+}
+.download span:nth-child(3){
+    display: flex;
+    position: relative;
+    display: inline-block;
+   box-sizing: border-box;
+   padding: 2px;
+   bottom: 20px;
+  left: 5px;
+   font-family: 'Segoe UI';
+  font-size: 13px;
+}
+.item {
+padding: 23px;
+background: #f9f9f9;
+border-radius: 12px;
+font-size: 20px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+text-align: center;
+}
+.item_lang{
+font-weight: 700;
+text-align: center;
+padding-bottom: 36px;
+}
+.grid{
+display: grid;
+grid-template-columns: 400px 400px 400px;
+gap:15px;
+
+}
+.btn{
+display: flex;
+    display: inline-block;
+    /* position: relative; */
+    padding: 12px 20px !important;
+    min-height: 48px;
+    /* min-width: 256px; this will create an issue*/
+    border-radius: 5px;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    background-color: #00b6d1;
+    border: none;
+    cursor: pointer;
+    
+}
+.btn a{
+color: #ffffff;
+text-decoration: none;
+}
+
+.blue {
+
+background: #5cb85c;
+}
+@media screen and (max-width: 1145px) {
+.grid{ 
+grid-template-columns: 1fr; 
+}
+}

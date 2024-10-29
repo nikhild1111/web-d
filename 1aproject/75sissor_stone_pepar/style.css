@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.name{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+.choice img:hover{
+    cursor: pointer;
+    border: 5px solid black;
+    opacity: 0.8;
+}
+.choice{
+    height: 218px;
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.choices img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50% 
+}
+/* #Rock{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+#paper{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+#scissors{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+} */
+.score_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 200px;
+}
+.user{
+    font-size: 30px;
+}
+.comp{
+    font-size: 30px;
+}
+.last{
+    display: flex;
+    justify-content: center;
+}
+.msg{
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    font-size: 20px;
+    display: inline;
+    border-radius: 10px;
+}

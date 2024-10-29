@@ -1,0 +1,80 @@
+<!-- aline items is used when we have a single row  -->
+<!-- justify-content is used when we have multiple row -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex-3sol</title>
+    <style>
+        .logo img{
+            width: 164px;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family:"Segoe UI";
+        }
+        .right ul{
+            display: flex;
+            gap: 34px;
+            
+            
+        }
+      
+        .right ul li{
+            display: flex;
+            /* list-style: inside;not required */
+            list-style-type: none;
+            /* display: inline-block;not required */
+              align-items: center;
+              cursor: pointer;
+          
+          
+            /* gap: 34px; */
+            /* It seems there might be a misunderstanding regarding the use of the gap property in CSS. The gap property applies spacing between flex items, but it does not apply to the li elements directly. Instead, it applies to the space between the flex items within the flex container.
+
+In your provided code, the gap property is applied to the ul element, which is a flex container. Therefore, the spacing will be applied between the child elements of the ul, which are the li elements. */
+           
+        }
+        .right ul span{
+            padding: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp" alt="ultra edit">
+            </div>
+            <div class="right">
+            <ul>
+                <li><span><a href="/">product</a> </span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg></li>
+                <li><span><a href="/">pricing</a></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg></li>
+                <li><span><a href="/">resources </a></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg></li>
+                <li><span><a href="/">anout us</a> </span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg></li>
+                <li><span><a href="/"> security and compliance</a></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg></li>
+                    <li><a href="/"><img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt=""></a></div> </li>
+            </ul>
+        </div>
+        <!-- <div>
+            <p>space arount means in div we retuen logo and in div we wright ul then they take same space arount it by obtening all the width if any new div come then they again arrenge width for alll and glive space to it </p>
+        </div> -->
+        </nav>
+    </header>
+    
+</body>
+</html>
