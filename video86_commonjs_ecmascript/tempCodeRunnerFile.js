@@ -1,2 +1,2 @@
-from "./module1.js"
-// console.log(a,b,c
+ule2.js");
+// console.log(a,__dirnam

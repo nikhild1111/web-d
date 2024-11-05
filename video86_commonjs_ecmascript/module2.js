@@ -1,4 +1,4 @@
-
+//this code is for common js we do not use export in word in common js
 module.exports={
     a:1,
     b:2

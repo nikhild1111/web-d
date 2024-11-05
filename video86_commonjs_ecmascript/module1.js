@@ -1,3 +1,5 @@
+
+// this code  is for es6 type =module is used /
 export const a=1;
 export const b=2;
 export const c=3;

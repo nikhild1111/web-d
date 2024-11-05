@@ -9,9 +9,9 @@
     <script>
         // http://localhost:3000/mypage.html//use for post
         async function testPost(){
-            let response = await fetch("/", {method: "POST"})  // Changed PUT to POST
+            let response = await fetch("/", {method: "PUT"})  // Changed PUT to POST
             let text = await response.text()
-            console.log(text)  // This will print the response from the server ('Hello World post!')
+            console.log(text)  // This will print the response from the server ('Hello World post!') to the console of page
         }
 
         testPost()  // Calling the function to trigger the post request

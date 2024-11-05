@@ -1,12 +1,12 @@
 // // we use http module to create server using node js
-// //server is not restarting automaticaly so we use npm i --global nodemon //so for all npm nodemon we get to restart server 
+// //server is not restarting automaticaly we has to do it manualy so we use npm i --global nodemon //so for all npm nodemon we get to restart server 
 // //npm init --y no quation give package
-// // nodemon --script.js server is noew get with restart
+// // nodemon --script.js server is now get with restart
 // // // const { createServer } = require('node:http');
 // // // now we can not use require  becasuse type =module
-// // import { http } from 'http';//wrong
-// import { createServer } from 'http';  // Correct import for createServer
-// const {createServer} =require('http')//may be not work
+// import { http } from 'http';// this will give error because http is not any function variable inside http module so dont use {} perenthiss so thet entire http module is come inside the http variable other wise export corect named export because {} are used for named export
+// import { createServer } from 'http';  // Correct import for createServer only
+// const {createServer} =require('http')//http and other modul have the number of method and variable so if weuse {} and give name inside thet then we are only exporting that specific function or the methid from http but when we give not give the {} peenthicis then we are exporting the entire http module inside thet function
 // const hostname = '127.0.0.1';
 // const port = 3000;
 
@@ -21,15 +21,18 @@
 // server.listen(port, hostname, () => {
 //   console.log(`Server running at http://${hostname}:${port}/`);
 // });
-// //why we use express it is an web framework
-// // http packge have limited capability  ,we have implement security from the start ,we cannot serv the static file ,also costiome code is requird for get post
+
+
+
+///****************************************** */
+//main contend of vedio 88
+// //why we use express it is an web framework usdes in node js
+//it is bulid for creating the website spetialy
+// // http packge have limited capability  ,we have to implement security from the start ,we cannot serv the static file ,also costume code is requird for get post request so we use express
 
 // //npm i express
-// //npm i express@4//specificaly v4 is install
+// //npm i express@4//specifically v4 is install
 
-
-
-//main contend of vedio 88
 
 //now start code in express
 const express = require('express')
@@ -43,9 +46,11 @@ const port = 3000
 //and this file is shown as a static file only file return inside public folder is shown
 app.use(express.static('public'));
 app.use(express.static('files'));//we can create multiple files
+
 // http://127.0.0.1:3000/harry.txt
 // http://127.0.0.1:3000/package.json //this are not allowed if we write it inside the public or any other file inside the public then it will shown
-// app.get or app.post or app.put or app.delete(path,handler)//
+
+// app.get or app.post or app.put or app.delete=> (path,handler) are giveinside the function//
 //here path is first argument and handler is an second argument which is a call back function
 app.get('/', (req, res) => {//by default get request is there whenever we apply get request 
   //on app then this will send response 
@@ -57,31 +62,42 @@ app.get('/about', (req, res) => {
 
 res.send('Hello about')
 })
-app.get('/blog', (req, res) => {
 
+// http://127.0.0.1:3000/blog/?abbb
+app.get('/blog', (req, res) => {
+let tokan=req.query;
+console.log(tokan);
 res.send('Hello blog')
 })
 app.get('/contact', (req, res) => {
 
 res.send('Hello contact')
 })
-app.get('/about', (req, res) => {
+app.get('/aboutll', (req, res) => {
+  // console.log(`hello ${req.params.slug}`);//here we not use the slug variable so undififnd come 
+  if(req.query.name==='aboutll'){
+    res.send('Hello World! now jj')
+  }
+  else{
+    res.send('Hello World!')
+  }
+  // res.send(`hello ${req.params.slug}`);//dont send two responce at a time it will give error
 
-res.send('Hello World! now jj')
 })
 
 //this all path are work for that go to local host /about and other that  is  http://127.0.0.1:3000/blog
-//if we dohttp://127.0.0.1:3000/harry cannot ger/harry is come
+//if we do http://127.0.0.1:3000/harry cannot ger/harry is come as we not difind harry as end point
 
 app.get('/blog/:slug', (req, res) => {
   // logic to fetch req.params.slug from the db
   console.log(req);//whenever we hit this that is run on local host then local object give the response  
-  //control f to find params or any other thing
+  //control  to find params or any other thing
 
   // http://127.0.0.1:3000/blog/aboutd?mode=dark&region=in
   console.log(req.params);//this will give varible { slug: 'aboutd' } in the output (params return befor ? in url)
   console.log(req.query);//this will give the part { mode: 'dark', region: 'in' } return in url after the ? this is bessicaly the special condition give in url 
-  res.send(`hello ${req.params.slug}`);
+  // res.send(`hello ${req.params.slug}`);
+  res.send(req.params.slug);//also we can use this
 });
 //req.params is object or function by ussing this we can access all the variable(parmeter) difind inside the url
 //here whatever variable we write in slug like (aboutt,mongo_db,into_to_python,into_to_python) all are print so we dont need to use differe reauest like blog/into_to_js into_to_python which is explin bellow
@@ -92,7 +108,7 @@ app.get('/blog/:slug', (req, res) => {
 
 
 
-// -> this code is bulck and note redable so we not use it we use code given just abou it
+// -> this code is bulck and note redable so we not use it we use code given just abou itmeans we use slug so we can write any statement
 // app.get('/blog/into_to_js', (req, res) => {
 // //logic to fetch intro to js from the db
 //   res.send('Hello /blog/into_to_js')

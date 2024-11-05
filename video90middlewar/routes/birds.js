@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router()
+// router are used to arenge the files and code , data sequentialy
 
 // middleware that is specific to this router
 const timeLog = (req, res, next) => {

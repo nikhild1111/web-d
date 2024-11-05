@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const folderPath=path.join(__dirname,'allfile');
+// console.log(folderPath);
 let jpg=path.join(__dirname,'jpg');
      let png=path.join(__dirname,'png');
      let pdf=path.join(__dirname,'pdf');
@@ -178,5 +179,49 @@ fs.readdir(folderPath, (err, files) => {
 //     // Iterate over the files array
 //     files.forEach(file => {
 //         console.log(file); // Logs each file or folder name found inside the directory
+//     });
+// });
+
+//*********move the file */
+
+// // const fs = require('fs');
+// const path = require('path');
+
+// // Define the source folder and target folder
+// const sourceFolder = path.join(__dirname, 'source-folder');  // Replace 'source-folder' with your actual source folder
+// const targetFolder = path.join(__dirname, 'target-folder');  // Replace 'target-folder' with your target folder
+
+// // Ensure the target folder exists or create it
+// if (!fs.existsSync(targetFolder)) {
+//     fs.mkdirSync(targetFolder, { recursive: true });
+//     console.log(`Created target folder: ${targetFolder}`);
+// }
+
+// // Function to append (move) files to the target folder
+// function appendFile(file) {
+//     const sourcePath = path.join(sourceFolder, file);  // File in the source folder
+//     const targetPath = path.join(targetFolder, file);  // File destination in the target folder
+    
+//     // Move the file from source to target
+//     fs.rename(sourcePath, targetPath, (err) => {
+//         if (err) {
+//             console.error(`Error appending file ${file}:`, err);
+//         } else {
+//             console.log(`Appended file: ${file}`);
+//         }
+//     });
+// }
+
+// // Read the source folder to get the list of files
+// fs.readdir(sourceFolder, (err, files) => {
+//     if (err) {
+//         console.error('Unable to scan source folder:', err);
+//         return;
+//     }
+
+//     // Iterate over each file in the source folder
+//     files.forEach((file) => {
+//         // Append (move) the file to the target folder
+//         appendFile(file);
 //     });
 // });
