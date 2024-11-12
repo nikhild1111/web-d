@@ -22,7 +22,7 @@ let currentSongElement = null; // To track the currently playing li
 async function  getalbum() {
 
   // console.log(folder);
-    let a=await fetch(`http://127.0.0.1:3000/songs/`)
+    let a=await fetch(`http://127.0.0.1:3002/songs/`)
     let response=await a.text();//when we fetch songs from local host its give in tabled form
   
     let div=document.createElement("div");
@@ -34,7 +34,7 @@ async function  getalbum() {
        const e=array[index];
        if(e.href.includes("/songs")){
         let folder2=e.href.split("/").slice(-2)[0];
-      let a2=await fetch(`http://127.0.0.1:3000/songs/${folder2}/info.json`)
+      let a2=await fetch(`http://127.0.0.1:3002/songs/${folder2}/info.json`)
       let response2=await a2.json();
       card.innerHTML=card.innerHTML+`  <div data-folder="${folder2}" class="a1">
                 <img class="but" src="img/but.svg" alt="">
@@ -65,6 +65,8 @@ async function  getalbum() {
   
          addli();
          playnow(`${songs[0]}`);
+        //  let h =document.getElementsByClassName("list")[0].src = 'img/play.svg';
+        // console.log(h)
        } catch (error) {
          console.error("Error fetching songs:", error);
        }
@@ -87,6 +89,7 @@ function playnow(songName, pause=false){
   if(!pause){
     current.play();
     play.src="img/play.svg";
+     
     
   }
   
@@ -185,7 +188,7 @@ Array.from(document.querySelector(".playlist").getElementsByTagName("li")).forEa
 
 async function  getsongs(folder) {
   // console.log(folder);
-    let a=await fetch(`http://127.0.0.1:3000/songs/${folder}`)
+    let a=await fetch(`http://127.0.0.1:3002/songs/${folder}`)
    
     let response=await a.text();//when we fetch songs from local host its give in tabled form
   
